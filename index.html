@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Practice tests, a 50-question mock exam and study notes for the New Jersey written driver knowledge test.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#7ADBBE">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%237ADBBE'/><path d='M17 34 Q21 21 32 21 Q43 21 47 34 Z' fill='%23FF8FB1'/><rect x='8' y='32' width='48' height='14' rx='7' fill='%23FF8FB1'/><circle cx='20' cy='47' r='5' fill='%233B2F4D'/><circle cx='44' cy='47' r='5' fill='%233B2F4D'/><circle cx='40' cy='37' r='1.6' fill='%233B2F4D'/><circle cx='46' cy='37' r='1.6' fill='%233B2F4D'/></svg>">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>NJ Written Driver Test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap">
+<style>
+/* Layout: one centered column (max 760px) under a mint road-sign header on a polka-dot page; quiz progress is a little road with a car driving to the finish flag. */
+:root {
+  --bg: #FFF6F9;
+  --dot: #F8DFE9;
+  --surface: #FFFFFF;
+  --ink: #3B2F4D;
+  --muted: #7C6E8E;
+  --line: #F2DCE6;
+  --line-strong: #E4C1D2;
+  --brand: #7ADBBE;
+  --brand-deep: #43B08E;
+  --brand-soft: #E2F8F0;
+  --on-brand: #12423A;
+  --link: #1E7A5E;
+  --pink: #FF8FB1;
+  --pink-deep: #E8638C;
+  --pink-soft: #FFE4EC;
+  --butter: #FFD66B;
+  --sky: #CFEFFF;
+  --road: #ECE4F4;
+  --lane: #FFFFFF;
+  --good: #23875E;
+  --good-bg: #E0F7EC;
+  --good-line: #92DDBA;
+  --bad: #D23D63;
+  --bad-bg: #FFE6ED;
+  --bad-line: #FFAAC0;
+  --warn: #8A6200;
+  --warn-bg: #FFF2C9;
+  --focus: #5B4BDB;
+  /* fixed colors: the header sign, the car and real-world sign colors look the same in both themes */
+  --paper: #FFFFFF;
+  --car-ink: #3B2F4D;
+  --tl-red: #FF7A93;
+  --tl-yellow: #FFD66B;
+  --tl-green: #5ED3A6;
+  --sign-red: #C8102E;
+  --sign-yellow: #F6C400;
+  --sign-ygreen: #C4DC1A;
+  --sign-orange: #F47B20;
+  --sign-green: #00653A;
+  --sign-blue: #1E4FA0;
+  --sign-brown: #6B4226;
+  --sign-white: #FFFFFF;
+  --sign-black: #111111;
+  --car-w: 46px;
+  --font-display: "Baloo 2", "Arial Rounded MT Bold", "Trebuchet MS", system-ui, sans-serif;
+  --font-body: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1F1A2E; --dot: #2A2340; --surface: #2A2440; --ink: #F7EFF9; --muted: #B9ABCB;
+    --line: #3B3356; --line-strong: #55497A; --brand-deep: #3E9E80; --brand-soft: #1F3B37;
+    --link: #8FE6C8; --pink-deep: #D9668B; --pink-soft: #4A2B45; --road: #3A3354; --lane: #8C80AD;
+    --good: #86E6BC; --good-bg: #1E3A33; --good-line: #3F8F6F; --bad: #FF9AB3; --bad-bg: #4A2537; --bad-line: #A54D6C;
+    --warn: #FFD66B; --warn-bg: #463B22; --focus: #B3A8FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1F1A2E; --dot: #2A2340; --surface: #2A2440; --ink: #F7EFF9; --muted: #B9ABCB;
+  --line: #3B3356; --line-strong: #55497A; --brand-deep: #3E9E80; --brand-soft: #1F3B37;
+  --link: #8FE6C8; --pink-deep: #D9668B; --pink-soft: #4A2B45; --road: #3A3354; --lane: #8C80AD;
+  --good: #86E6BC; --good-bg: #1E3A33; --good-line: #3F8F6F; --bad: #FF9AB3; --bad-bg: #4A2537; --bad-line: #A54D6C;
+  --warn: #FFD66B; --warn-bg: #463B22; --focus: #B3A8FF;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background-color: var(--bg);
+  background-image: radial-gradient(var(--dot) 1.5px, transparent 1.7px);
+  background-size: 22px 22px;
+  color: var(--ink);
+  font: 400 16px/1.55 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 760px; margin: 0 auto; }
+h1, h2, h3 { text-wrap: balance; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+a { color: var(--link); text-underline-offset: 2px; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* ---------- header: a friendly road sign ---------- */
+.sign { background: var(--brand); color: var(--on-brand); border-radius: 26px; padding: 6px; margin-block: 16px 24px; box-shadow: 0 5px 0 var(--brand-deep); }
+.sign-inner { border: 2.5px dashed var(--paper); border-radius: 21px; padding: 14px 18px; display: flex; gap: 14px 20px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.sign .route { display: flex; align-items: center; gap: 8px; font: 800 12px/1 var(--font-display); letter-spacing: .12em; text-transform: uppercase; }
+.tl { display: inline-flex; gap: 3px; padding: 3px 5px; border-radius: 999px; background: var(--car-ink); }
+.tl i { display: block; width: 7px; height: 7px; border-radius: 50%; background: var(--tl-red); }
+.tl i:nth-child(2) { background: var(--tl-yellow); }
+.tl i:nth-child(3) { background: var(--tl-green); }
+.sign h1 { margin: 6px 0 0; font: 800 clamp(28px, 5.6vw, 40px)/1 var(--font-display); letter-spacing: -.01em; }
+.home-link { all: unset; cursor: pointer; border-radius: 6px; }
+.home-link:focus-visible { outline: 3px solid var(--paper); outline-offset: 3px; }
+.exit-tab { background: var(--paper); color: var(--on-brand); border-radius: 16px; padding: 8px 14px 5px; text-align: center; font: 700 12px/1.1 var(--font-display); text-transform: uppercase; letter-spacing: .1em; box-shadow: 0 3px 0 var(--brand-deep); transform: rotate(3deg); }
+.exit-tab b { display: block; font-size: 24px; letter-spacing: 0; margin-top: 1px; font-variant-numeric: tabular-nums; }
+@media (max-width: 460px) {
+  .sign-inner { flex-wrap: nowrap; padding: 12px 14px; }
+  .sign .route { font-size: 10px; letter-spacing: .1em; }
+  .sign h1 { font-size: 25px; }
+  .exit-tab { padding: 6px 9px 3px; font-size: 10px; }
+  .exit-tab b { font-size: 17px; }
+}
+.sign.compact .sign-inner { padding: 8px 14px; }
+.sign.compact h1 { font-size: 21px; margin-top: 3px; }
+.sign.compact .exit-tab { padding: 4px 9px 2px; }
+.sign.compact .exit-tab b { font-size: 16px; }
+
+/* ---------- shared bits ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 11px 20px 9px; border-radius: 999px; border: 2px solid transparent; font: 700 16px/1 var(--font-display); cursor: pointer; text-decoration: none; white-space: nowrap; transition: transform .08s ease, box-shadow .08s ease; }
+.btn.primary { background: var(--brand); color: var(--on-brand); box-shadow: 0 3px 0 var(--brand-deep); }
+.btn.ghost { background: var(--surface); border-color: var(--line-strong); color: var(--ink); box-shadow: 0 3px 0 var(--line-strong); }
+.btn:hover:not(:disabled) { transform: translateY(-1px); }
+.btn.primary:active:not(:disabled) { transform: translateY(2px); box-shadow: 0 1px 0 var(--brand-deep); }
+.btn.ghost:active:not(:disabled) { transform: translateY(2px); box-shadow: 0 1px 0 var(--line-strong); }
+.btn.sm { min-height: 38px; padding: 8px 15px 6px; font-size: 15px; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.link { background: none; border: 0; padding: 0; cursor: pointer; color: var(--link); font: 700 15px/1.4 var(--font-body); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; text-align: left; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.pill { display: inline-block; padding: 4px 10px 3px; border-radius: 999px; font: 700 12px/1.2 var(--font-display); letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+.pill.good { background: var(--good-bg); color: var(--good); }
+.pill.warn { background: var(--warn-bg); color: var(--warn); }
+.pill.bad { background: var(--bad-bg); color: var(--bad); }
+.pill.plain { background: var(--surface); color: var(--muted); box-shadow: inset 0 0 0 1.5px var(--line-strong); }
+.eyebrow { font: 700 13px/1 var(--font-display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6px 12px; flex-wrap: wrap; margin: 36px 0 12px; }
+.section-head h2 { margin: 0; font: 800 25px/1.1 var(--font-display); }
+.section-head .aside { color: var(--muted); font-size: 14px; }
+.lede { font-size: 17px; max-width: 62ch; margin: 0; }
+.muted { color: var(--muted); }
+
+/* ---------- the car and its road ---------- */
+.road { position: relative; height: 22px; margin-top: 16px; border-radius: 999px; background: var(--road); }
+.road .lane { position: absolute; left: 12px; right: 30px; top: 50%; border-top: 2px dashed var(--lane); transform: translateY(-1px); }
+.road .trail { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; width: calc((100% - var(--car-w)) * var(--p) + var(--car-w) / 2); transition: width 1.2s cubic-bezier(.3, 1.2, .5, 1); }
+.road .flag { position: absolute; right: 8px; bottom: 6px; width: 16px; z-index: 1; }
+.road .flag svg { display: block; width: 100%; height: auto; }
+.road .car { position: absolute; bottom: 3px; left: calc((100% - var(--car-w)) * var(--p)); width: var(--car-w); z-index: 2; transition: left .55s cubic-bezier(.3, 1.3, .5, 1); }
+.road .car svg { display: block; width: 100%; height: auto; }
+
+/* ---------- home ---------- */
+.hello { display: flex; gap: 12px; align-items: flex-end; }
+.hello-car { flex: none; width: 76px; margin-bottom: 4px; animation: bob 1.8s ease-in-out infinite; }
+.hello-car svg { display: block; width: 100%; height: auto; }
+.bubble { min-width: 0; background: var(--surface); border: 2px solid var(--line); border-radius: 22px 22px 22px 6px; padding: 14px 18px; box-shadow: 0 4px 0 var(--line); }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@media (max-width: 460px) { .hello-car { width: 56px; } .bubble { font-size: 16px; padding: 12px 14px; } }
+.resume { display: flex; justify-content: space-between; align-items: center; gap: 12px 16px; flex-wrap: wrap; background: var(--warn-bg); border: 2px dashed var(--butter); border-radius: 20px; padding: 14px 16px; margin-bottom: 20px; }
+.resume b { display: block; font: 800 17px/1.2 var(--font-display); }
+.resume span { color: var(--muted); font-size: 14px; }
+.tgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 680px) { .tgrid { grid-template-columns: minmax(0, 1fr); } }
+.tcard { background: var(--surface); border: 2px solid var(--line); border-radius: 22px; padding: 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; box-shadow: 0 4px 0 var(--line); }
+.tcard-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 30px; }
+.tnum { display: inline-flex; align-items: center; font: 700 14px/1 var(--font-display); letter-spacing: .08em; text-transform: uppercase; color: var(--link); }
+.sticker { display: inline-grid; place-items: center; width: 30px; height: 30px; margin-right: 8px; transform: rotate(-8deg); filter: drop-shadow(0 2px 0 var(--line-strong)); }
+.sticker svg { display: block; width: 100%; height: 100%; }
+.tcard h3 { margin: 0; font: 800 19px/1.15 var(--font-display); }
+.tcard .meta { margin: 0; color: var(--muted); font-size: 14px; }
+.tcard-foot { margin-top: auto; padding-top: 8px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.best { font-size: 14px; color: var(--muted); }
+.best b { font: 800 20px/1 var(--font-display); color: var(--ink); font-variant-numeric: tabular-nums; }
+.ready-note { margin: 14px 0 0; padding: 12px 16px; border-radius: 18px; background: var(--good-bg); border: 2px solid var(--good-line); font-size: 15px; }
+
+.xcard { display: flex; gap: 18px; align-items: flex-start; background: var(--surface); border: 2px solid var(--line); border-radius: 22px; padding: 18px 16px 16px; box-shadow: 0 4px 0 var(--line); }
+.marker { flex: none; width: 76px; padding: 5px; border-radius: 18px; background: var(--brand); color: var(--on-brand); box-shadow: 0 4px 0 var(--brand-deep); transform: rotate(-5deg); }
+.marker-inner { border: 2px dashed var(--paper); border-radius: 13px; display: flex; flex-direction: column; align-items: center; padding: 8px 2px 6px; }
+.marker b { font: 800 34px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.marker span { font: 700 11px/1.1 var(--font-display); letter-spacing: .1em; text-transform: uppercase; margin-top: 2px; }
+.xbody { min-width: 0; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.xbody h3 { margin: 0; font: 800 22px/1.15 var(--font-display); }
+.xbody p { margin: 0; color: var(--muted); font-size: 15px; max-width: 58ch; }
+.xbody .row { margin-top: 8px; justify-content: space-between; }
+@media (max-width: 460px) { .marker { width: 62px; } .marker b { font-size: 28px; } }
+
+.duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 14px; }
+@media (max-width: 560px) { .duo { grid-template-columns: minmax(0, 1fr); } }
+.duo .tcard h3 { font-size: 18px; }
+
+.tracker { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tracker th { text-align: left; font: 700 12px/1.2 var(--font-display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px 8px; border-bottom: 2px solid var(--line); white-space: nowrap; }
+.tracker td { padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tracker tr:last-child td { border-bottom: 0; }
+.tracker td.score { font: 800 16px/1.3 var(--font-display); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tracker td.score.good { color: var(--good); }
+.tracker td.score.bad { color: var(--bad); }
+.tracker td.when { white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
+.scroll-x { overflow-x: auto; background: var(--surface); border: 2px solid var(--line); border-radius: 20px; }
+.empty { margin: 0; padding: 16px 18px; color: var(--muted); background: var(--surface); border: 2px dashed var(--line-strong); border-radius: 20px; font-size: 15px; }
+.reset-row { margin-top: 28px; display: flex; gap: 10px 14px; align-items: center; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+
+/* ---------- quiz ---------- */
+.qbar { margin-bottom: 16px; }
+.qbar-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 8px; }
+.qbar .mode { font: 800 16px/1.2 var(--font-display); letter-spacing: .05em; text-transform: uppercase; }
+.qcount { display: flex; justify-content: space-between; gap: 10px; font: 700 13px/1 var(--font-body); color: var(--muted); font-variant-numeric: tabular-nums; }
+.qcount b { color: var(--ink); }
+.qcard { background: var(--surface); border: 2px solid var(--line); border-radius: 24px; padding: 20px; box-shadow: 0 5px 0 var(--line); }
+@media (max-width: 460px) { .qcard { padding: 16px; } }
+.qtopic { display: inline-block; padding: 5px 11px 3px; border-radius: 999px; background: var(--brand-soft); color: var(--link); font: 700 12px/1.2 var(--font-display); letter-spacing: .06em; text-transform: uppercase; }
+.qsign { margin: 14px 0 2px; }
+.qsign svg { width: 92px; height: 92px; display: block; }
+.qtext { text-wrap: pretty; margin: 12px 0 18px; font: 800 21px/1.35 var(--font-body); max-width: 60ch; }
+@media (max-width: 460px) { .qtext { font-size: 19px; } }
+.opts { display: grid; gap: 11px; }
+.opt { display: flex; gap: 12px; align-items: flex-start; width: 100%; text-align: left; padding: 12px 14px; border: 2px solid var(--line-strong); border-radius: 18px; background: var(--surface); color: var(--ink); font: 600 17px/1.4 var(--font-body); cursor: pointer; box-shadow: 0 3px 0 var(--line-strong); transition: transform .08s ease, box-shadow .08s ease, border-color .12s ease, background-color .12s ease; }
+.opt:hover:not(:disabled) { border-color: var(--brand-deep); transform: translateY(-1px); }
+.opt:active:not(:disabled) { transform: translateY(2px); box-shadow: 0 1px 0 var(--line-strong); }
+.opt:disabled { cursor: default; }
+.opt .letter { flex: none; width: 30px; height: 30px; margin-top: -2px; padding-top: 2px; border-radius: 50%; background: var(--pink-soft); color: var(--ink); display: grid; place-items: center; font: 800 15px/1 var(--font-display); }
+.opt .otext { flex: 1; min-width: 0; padding-top: 1px; }
+.opt .mark { flex: none; font: 800 18px/1.3 var(--font-display); }
+.opt.is-picked { border-color: var(--brand-deep); background: var(--brand-soft); box-shadow: 0 3px 0 var(--brand-deep); }
+.opt.is-picked .letter { background: var(--brand); color: var(--on-brand); }
+.opt.is-right { border-color: var(--good-line); background: var(--good-bg); box-shadow: 0 3px 0 var(--good-line); }
+.opt.is-right .letter { background: var(--good); color: var(--surface); }
+.opt.is-right .mark { color: var(--good); }
+.opt.is-wrong { border-color: var(--bad-line); background: var(--bad-bg); box-shadow: 0 3px 0 var(--bad-line); }
+.opt.is-wrong .letter { background: var(--bad); color: var(--surface); }
+.opt.is-wrong .mark { color: var(--bad); }
+.feedback { margin-top: 16px; padding: 14px 16px; border-radius: 20px; border: 2px solid; animation: pop .28s ease-out; }
+.feedback.ok { background: var(--good-bg); border-color: var(--good-line); }
+.feedback.no { background: var(--bad-bg); border-color: var(--bad-line); }
+.feedback p { margin: 0 0 8px; }
+.feedback .verdict { display: flex; align-items: center; gap: 8px; font: 800 19px/1.2 var(--font-display); }
+.vicon { flex: none; display: grid; place-items: center; width: 26px; height: 26px; padding-top: 1px; border-radius: 50%; font-size: 15px; color: var(--surface); }
+.feedback.ok .verdict { color: var(--good); }
+.feedback.ok .vicon { background: var(--good); }
+.feedback.no .verdict { color: var(--bad); }
+.feedback.no .vicon { background: var(--bad); }
+@keyframes pop { from { transform: scale(.95); } to { transform: none; } }
+.qnav { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; }
+.confirm { margin-top: 14px; padding: 14px 16px; border-radius: 20px; background: var(--warn-bg); border: 2px dashed var(--butter); }
+.confirm p { margin: 0 0 10px; }
+.navgrid-wrap { margin-top: 22px; }
+.navgrid-wrap .row { justify-content: space-between; margin-bottom: 10px; }
+.navgrid { display: grid; grid-template-columns: repeat(auto-fill, 38px); gap: 7px; }
+.navgrid button { width: 38px; height: 38px; border-radius: 50%; border: 2px solid var(--line-strong); background: var(--surface); font: 700 13px/1 var(--font-body); cursor: pointer; font-variant-numeric: tabular-nums; }
+.navgrid button.done { background: var(--good-bg); border-color: var(--good-line); }
+.navgrid button.here { border-color: var(--ink); box-shadow: 0 0 0 2px var(--ink); }
+.legend { display: flex; gap: 14px; font-size: 13px; color: var(--muted); }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; vertical-align: -1px; margin-right: 5px; border: 2px solid var(--line-strong); background: var(--surface); }
+.legend i.done { background: var(--good-bg); border-color: var(--good-line); }
+.kbd-hint { margin-top: 14px; font-size: 13px; color: var(--muted); }
+@media (hover: none) { .kbd-hint { display: none; } }
+
+/* ---------- results ---------- */
+.rhead { background: var(--surface); border: 2px solid var(--line); border-radius: 24px; padding: 20px; box-shadow: 0 5px 0 var(--line); }
+.rscore { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin: 8px 0 4px; }
+.rscore b { display: inline-block; font: 800 clamp(52px, 13vw, 72px)/1 var(--font-display); font-variant-numeric: tabular-nums; animation: pop .4s ease-out; }
+.rscore .of { font: 700 24px/1 var(--font-display); color: var(--muted); }
+.rsub { margin: 4px 0 0; color: var(--muted); }
+.bar { position: relative; margin: 10px 0 34px; }
+.bar .road { margin-top: 18px; height: 24px; }
+.bar .car { transition-duration: 1.2s; }
+.bar .trail.good { background: var(--good-line); }
+.bar .trail.bad { background: var(--bad-line); }
+.bar .trail.warn { background: var(--butter); }
+.bar .tick { position: absolute; top: 10px; height: 36px; width: 3px; border-radius: 2px; background: var(--ink); left: calc((100% - var(--car-w)) * .8 + var(--car-w) / 2); transform: translateX(-1.5px); }
+.bar .tick-label { position: absolute; top: 50px; left: calc((100% - var(--car-w)) * .8 + var(--car-w) / 2); transform: translateX(-50%); font: 700 12px/1 var(--font-body); color: var(--muted); white-space: nowrap; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-flex; gap: 6px; align-items: center; padding: 7px 12px 6px; border-radius: 999px; border: 2px solid var(--line-strong); background: var(--surface); color: var(--ink); font: 700 14px/1.2 var(--font-body); cursor: pointer; text-decoration: none; box-shadow: 0 2px 0 var(--line-strong); }
+.chip:hover { border-color: var(--brand-deep); }
+.chip .n { font: 800 12px/1 var(--font-display); background: var(--bad-bg); color: var(--bad); border-radius: 999px; padding: 4px 7px 2px; font-variant-numeric: tabular-nums; }
+.seg { display: inline-flex; border: 2px solid var(--line-strong); border-radius: 999px; overflow: hidden; background: var(--surface); }
+.seg button { border: 0; background: transparent; padding: 7px 13px 5px; font: 700 14px/1 var(--font-display); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.rlist { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.ritem { display: flex; gap: 12px; background: var(--surface); border: 2px solid var(--line); border-radius: 20px; padding: 14px 16px; }
+.rnum { flex: none; width: 30px; height: 30px; padding-top: 2px; border-radius: 50%; background: var(--pink-soft); color: var(--ink); display: grid; place-items: center; font: 800 14px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.rbody { min-width: 0; flex: 1; }
+.rbody p { margin: 0 0 6px; }
+.rq { font-weight: 800; }
+.rline { display: flex; gap: 8px; font-size: 15px; }
+.rline .mark { flex: none; font: 800 15px/1.5 var(--font-display); }
+.rline.good .mark { color: var(--good); }
+.rline.bad .mark { color: var(--bad); }
+.rwhy { color: var(--muted); font-size: 15px; }
+.ractions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+
+/* ---------- study notes ---------- */
+.notes-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 6px; }
+.notes-nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding: 10px 0; margin-bottom: 4px; border-bottom: 2px dotted var(--line-strong); }
+.notes-nav .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 3px; }
+.notes-nav .chips::-webkit-scrollbar { display: none; }
+.notes-nav .chip { flex: none; }
+.notes h2 { font: 800 27px/1.1 var(--font-display); margin: 38px 0 6px; scroll-margin-top: 70px; }
+.notes h3 { display: flex; align-items: center; gap: 8px; font: 800 18px/1.25 var(--font-body); margin: 22px 0 8px; scroll-margin-top: 70px; padding: 2px 6px 2px 0; border-radius: 8px; transition: background-color .6s ease; }
+.notes h3::before { content: ""; flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--pink); }
+.notes h3.flash { background: var(--warn-bg); }
+.notes p, .notes li { max-width: 66ch; }
+.notes ul, .notes ol { padding-left: 22px; margin: 0 0 8px; }
+.notes li { margin-bottom: 5px; }
+.notes li::marker { color: var(--pink-deep); font-weight: 800; }
+.notes .intro { color: var(--muted); margin: 0 0 6px; }
+.ntable { width: 100%; border-collapse: collapse; font-size: 15px; background: var(--surface); }
+.ntable th { text-align: left; font: 700 12px/1.2 var(--font-display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 10px 12px 8px; border-bottom: 2px solid var(--line); }
+.ntable td { padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.ntable tr:last-child td { border-bottom: 0; }
+.ntable td.v { font: 700 15px/1.4 var(--font-body); font-variant-numeric: tabular-nums; }
+.ntable .shape svg { width: 34px; height: 34px; display: block; }
+.sw { display: inline-block; width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--line-strong); vertical-align: -4px; margin-right: 8px; }
+.sources { margin-top: 36px; padding-top: 16px; border-top: 2px dotted var(--line-strong); font-size: 14px; color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) { *, *::before { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="sign" id="sign">
+    <div class="sign-inner">
+      <div>
+        <div class="route"><span class="tl" aria-hidden="true"><i></i><i></i><i></i></span>New Jersey MVC · Knowledge test</div>
+        <h1><button class="home-link" data-act="home">NJ Written Driver Test</button></h1>
+      </div>
+      <div class="exit-tab" aria-label="Pass mark: 40 out of 50">Pass<b>40/50</b></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="v-home"></section>
+    <section id="v-quiz" hidden></section>
+    <section id="v-results" hidden></section>
+
+    <section id="v-notes" class="notes" hidden>
+      <div class="notes-top">
+        <p class="eyebrow">Study notes</p>
+        <button class="btn ghost sm" data-act="notes-back" id="notes-back">← Back</button>
+      </div>
+      <p class="intro">Every number and rule from the study guide. When you miss a question, its topic links here.</p>
+      <nav class="notes-nav" aria-label="Study note sections">
+        <div class="chips">
+          <a class="chip" href="#g-numbers" data-act="jumpnote" data-target="g-numbers">Key numbers</a>
+          <a class="chip" href="#g-right" data-act="jumpnote" data-target="g-right">Right of way</a>
+          <a class="chip" href="#g-signs" data-act="jumpnote" data-target="g-signs">Signs &amp; signals</a>
+          <a class="chip" href="#g-alcohol" data-act="jumpnote" data-target="g-alcohol">Alcohol &amp; DWI</a>
+          <a class="chip" href="#g-gdl" data-act="jumpnote" data-target="g-gdl">GDL rules</a>
+          <a class="chip" href="#g-points" data-act="jumpnote" data-target="g-points">Points</a>
+          <a class="chip" href="#g-safe" data-act="jumpnote" data-target="g-safe">Safe driving</a>
+          <a class="chip" href="#g-tips" data-act="jumpnote" data-target="g-tips">Test day</a>
+        </div>
+      </nav>
+
+      <h2 id="g-numbers">Speed limits and key numbers</h2>
+      <p class="intro">Many test questions ask for one number. Learn this section well.</p>
+
+      <h3 id="n-about">About the test</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Item</th><th>Detail</th></tr>
+        <tr><td>Questions</td><td class="v">50, multiple choice</td></tr>
+        <tr><td>Passing score</td><td class="v">40 correct (80%)</td></tr>
+        <tr><td>Also required</td><td>A vision test on the same visit</td></tr>
+        <tr><td>If you fail</td><td>You can test again in <b>7 days</b></td></tr>
+        <tr><td>If you pass</td><td>The MVC validates your permit</td></tr>
+        <tr><td>What to bring</td><td>Your permit and your 6 Points of ID documents</td></tr>
+        <tr><td>Permit time limit</td><td><b>2 years</b> to pass the knowledge test, pass the road test, and get the probationary license</td></tr>
+      </table></div>
+      <p>All questions come from the New Jersey Driver Manual (revised September 2025).</p>
+
+      <h3 id="n-speed">Speed limits (when no sign shows a different limit)</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Where</th><th>Limit</th></tr>
+        <tr><td>School zones, business districts, residential districts</td><td class="v">25 mph</td></tr>
+        <tr><td>Some low-density business and residential districts</td><td class="v">35 mph</td></tr>
+        <tr><td>All other roads</td><td class="v">50 mph</td></tr>
+        <tr><td>Some state highways (as posted) and all interstates</td><td class="v">55 mph</td></tr>
+        <tr><td>Some state highways (as posted)</td><td class="v">65 mph</td></tr>
+      </table></div>
+      <p>A speed limit is the top speed for good conditions. In rain, snow, fog, or heavy traffic, drive slower than the limit.</p>
+
+      <h3 id="n-distances">Distances and other numbers</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Rule</th><th>Number</th></tr>
+        <tr><td>Stop behind a school bus with flashing red lights</td><td class="v">At least 25 feet</td></tr>
+        <tr><td>Pass a school bus parked at the curb at a school, loading children on that side</td><td class="v">10 mph or less</td></tr>
+        <tr><td>No parking near a fire hydrant</td><td class="v">10 feet</td></tr>
+        <tr><td>No parking near a crosswalk or an intersection</td><td class="v">25 feet</td></tr>
+        <tr><td>No parking near a stop sign</td><td class="v">50 feet</td></tr>
+        <tr><td>No parking near the nearest rail of a railroad crossing</td><td class="v">50 feet</td></tr>
+        <tr><td>No parking near a fire station driveway</td><td class="v">20 feet (75 feet on the opposite side, when signs show it)</td></tr>
+        <tr><td>Stop before a crosswalk on a multi-lane road</td><td class="v">About 30 feet</td></tr>
+        <tr><td>Space when you pass a pedestrian or bicycle</td><td class="v">Move over a lane; if not, at least 4 feet; if neither is safe, 25 mph or less</td></tr>
+        <tr><td>Following distance in good weather</td><td class="v">At least 3 seconds (4 or more in bad weather)</td></tr>
+        <tr><td>Headlights on</td><td class="v">Half an hour after sunset to half an hour before sunrise, when you see less than 500 feet, and when your wipers are on</td></tr>
+        <tr><td>Dim high beams for oncoming traffic</td><td class="v">Within 500 feet</td></tr>
+      </table></div>
+
+      <h2 id="g-right">Right of way and intersections</h2>
+      <p class="intro">The law tells you who must yield. It never gives you a right to hit someone. When in doubt, yield.</p>
+
+      <h3 id="n-pedestrians">Pedestrians</h3>
+      <ul>
+        <li>Stop and stay stopped for a pedestrian in a marked crosswalk. This applies when the pedestrian is on your half of the road, or within one lane of it.</li>
+        <li>Yield to pedestrians at every intersection, including intersections with no crosswalk lines.</li>
+        <li>Never pass a car that is stopped at a crosswalk.</li>
+        <li>Do not stop with any part of your car in the crosswalk.</li>
+        <li>A pedestrian who crosses on a green or “Walk” signal has the right of way over turning cars.</li>
+        <li>Penalty for failure to yield: <b>$200 fine, 2 points, and up to 15 days of community service.</b></li>
+      </ul>
+
+      <h3 id="n-emergency">Emergency vehicles</h3>
+      <ul>
+        <li>When you see flashing red or blue lights or hear a siren, pull to the right edge of the road and stop.</li>
+        <li>Stay stopped until the emergency vehicle passes.</li>
+        <li><b>Move Over law:</b> When you approach any stopped vehicle with flashing or blinking lights, move to a lane that is not next to it. If you cannot move over safely, slow down below the speed limit and be ready to stop. The fine is <b>$100 to $500</b>. Give the same space to a vehicle marked with flares or warning triangles. The law does not name those, but it is the safe thing to do.</li>
+      </ul>
+
+      <h3 id="n-intersections">Intersections</h3>
+      <ul>
+        <li>At a four-way stop, the first car to stop goes first.</li>
+        <li>If two cars stop at the same time, the car on the left yields to the car on the right.</li>
+        <li>When you turn left, yield to oncoming traffic and pedestrians.</li>
+        <li>When you enter a road from a driveway, alley, or parking lot, stop and yield to all traffic and pedestrians.</li>
+        <li>Do not enter an intersection if you cannot get all the way through it.</li>
+      </ul>
+
+      <h3 id="n-njturns">New Jersey special turns</h3>
+      <ul>
+        <li><b>Jughandle:</b> Many New Jersey highways have no left-turn lanes. To turn left, exit to the right onto a ramp. The ramp loops you around to cross the highway.</li>
+        <li><b>Right turn on red:</b> You may turn right on red after a full stop, unless a sign says no. Yield to pedestrians and traffic first.</li>
+        <li><b>Traffic circles:</b> Watch the signs. Yield when a yield sign tells you to.</li>
+      </ul>
+
+      <h2 id="g-signs">Signs, signals and road markings</h2>
+      <p class="intro">A sign’s shape and color tell you its type before you can read it. The test often shows a shape with no words.</p>
+
+      <h3 id="n-shapes">Sign shapes</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th></th><th>Shape</th><th>Meaning</th></tr>
+        <tr><td class="shape" data-sign="octagon"></td><td>Octagon (8 sides)</td><td class="v">Stop</td></tr>
+        <tr><td class="shape" data-sign="triangle"></td><td>Triangle, point down</td><td class="v">Yield</td></tr>
+        <tr><td class="shape" data-sign="diamond"></td><td>Diamond</td><td class="v">Warning of a hazard ahead</td></tr>
+        <tr><td class="shape" data-sign="pentagon"></td><td>Pentagon (5 sides)</td><td class="v">School zone or school crossing</td></tr>
+        <tr><td class="shape" data-sign="round"></td><td>Round</td><td class="v">Railroad crossing ahead</td></tr>
+        <tr><td class="shape" data-sign="pennant"></td><td>Pennant (sideways triangle)</td><td class="v">No passing zone</td></tr>
+        <tr><td class="shape" data-sign="rectangle"></td><td>Rectangle, vertical</td><td class="v">Rules (speed limit, no turn)</td></tr>
+        <tr><td class="shape" data-sign="crossbuck"></td><td>Crossbuck (X)</td><td class="v">Railroad crossing; yield to trains</td></tr>
+      </table></div>
+
+      <h3 id="n-colors">Sign colors</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Color</th><th>Meaning</th></tr>
+        <tr><td><span class="sw" style="background:var(--sign-red)"></span>Red</td><td class="v">Stop, yield, do not enter, wrong way</td></tr>
+        <tr><td><span class="sw" style="background:var(--sign-yellow)"></span>Yellow</td><td class="v">General warning</td></tr>
+        <tr><td><span class="sw" style="background:var(--sign-ygreen)"></span>Fluorescent yellow-green</td><td class="v">School, pedestrian, and bicycle warnings</td></tr>
+        <tr><td><span class="sw" style="background:var(--sign-orange)"></span>Orange</td><td class="v">Work zone</td></tr>
+        <tr><td><span class="sw" style="background:var(--sign-white)"></span>White</td><td class="v">Rules</td></tr>
+        <tr><td><span class="sw" style="background:var(--sign-green)"></span>Green</td><td class="v">Directions and distances</td></tr>
+        <tr><td><span class="sw" style="background:var(--sign-blue)"></span>Blue</td><td class="v">Services (gas, food, hospital)</td></tr>
+        <tr><td><span class="sw" style="background:var(--sign-brown)"></span>Brown</td><td class="v">Parks and recreation areas</td></tr>
+      </table></div>
+
+      <h3 id="n-signals">Traffic signals</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Signal</th><th>What to do</th></tr>
+        <tr><td>Steady red</td><td>Stop. Wait for green.</td></tr>
+        <tr><td>Flashing red</td><td>Stop fully, then go when it is safe. Treat it as a stop sign.</td></tr>
+        <tr><td>Steady yellow</td><td>The light will turn red. Stop if you can do so safely.</td></tr>
+        <tr><td>Flashing yellow</td><td>Slow down and go with care.</td></tr>
+        <tr><td>Green</td><td>Go, after you yield to pedestrians and cars still in the intersection.</td></tr>
+        <tr><td>Green arrow</td><td>Go in the arrow’s direction with care. Yield to pedestrians.</td></tr>
+        <tr><td>Signal does not work</td><td>Treat the intersection as a four-way stop.</td></tr>
+      </table></div>
+
+      <h3 id="n-lines">Road lines</h3>
+      <ul>
+        <li><b>Yellow lines</b> separate traffic that moves in opposite directions.</li>
+        <li><b>White lines</b> separate lanes that move in the same direction.</li>
+        <li>A <b>solid centerline</b> on your side means do not pass.</li>
+        <li>A <b>broken line</b> on your side means you may pass when it is safe.</li>
+        <li><b>Double solid yellow</b> means no passing from either side.</li>
+      </ul>
+
+      <h3 id="n-rail">Railroad crossings</h3>
+      <ul>
+        <li>Stop when lights flash, a gate is down, or a train comes.</li>
+        <li>Never go around a lowered gate.</li>
+        <li>Do not shift gears while you cross the tracks.</li>
+      </ul>
+
+      <h2 id="g-alcohol">Alcohol, drugs and DWI</h2>
+      <p class="intro">New Jersey calls drunk or drugged driving DWI (driving while intoxicated).</p>
+
+      <h3 id="n-bac">BAC limits</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Driver</th><th>Illegal BAC</th></tr>
+        <tr><td>Age 21 or older</td><td class="v">0.08% or higher</td></tr>
+        <tr><td>Commercial driver in a commercial vehicle</td><td class="v">0.04% or higher</td></tr>
+        <tr><td>Under age 21</td><td class="v">0.01% or higher (zero tolerance)</td></tr>
+      </table></div>
+      <p>You can also get a DWI with a lower BAC if alcohol or drugs make you an unsafe driver.</p>
+
+      <h3 id="n-consent">Implied consent</h3>
+      <p>When you drive in New Jersey, you agree to take a breath test if police arrest you for DWI. If you refuse, you get a separate charge with its own penalties.</p>
+
+      <h3 id="n-dwi">First-offense DWI penalties (age 21 or older)</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>BAC</th><th>Fine</th><th>Ignition interlock</th></tr>
+        <tr><td class="v">0.08% to under 0.10%</td><td class="v">$250 to $400</td><td>3 months</td></tr>
+        <tr><td class="v">0.10% to under 0.15%</td><td class="v">$300 to $500</td><td>7 to 12 months</td></tr>
+        <tr><td class="v">0.15% or higher</td><td class="v">$300 to $500</td><td>3 months of license forfeiture with interlock, then interlock for 12 to 15 more months</td></tr>
+      </table></div>
+      <p>All first offenders can also get up to 30 days in jail, 12 to 48 hours at an Intoxicated Driver Resource Center (IDRC), and a $1,000 surcharge each year for 3 years. A third offense brings a $1,000 fine, 180 days in jail, and a long license suspension.</p>
+
+      <h3 id="n-alcohol">Facts about alcohol</h3>
+      <ul>
+        <li>These drinks hold the same amount of alcohol: one 12-ounce beer, one 5-ounce glass of wine, and one 1.5-ounce shot of liquor.</li>
+        <li>Only time makes you sober. Coffee, cold showers, and fresh air do not.</li>
+        <li>Alcohol slows your reaction time and hurts your judgment before you feel drunk.</li>
+        <li>Signs of a drunk driver: weaving between lanes, driving much slower than traffic, and sudden stops.</li>
+        <li>If you see a drunk driver, keep your distance and call the police when it is safe.</li>
+      </ul>
+
+      <h2 id="g-gdl">GDL rules (permit and probationary license)</h2>
+      <p class="intro">New Jersey uses a Graduated Driver License (GDL) system. These rules apply to permit holders and probationary drivers under age 21.</p>
+
+      <h3 id="n-gdlsteps">The steps</h3>
+      <ol>
+        <li><b>Get a permit.</b> You can get a special learner’s permit at 16 if you take a behind-the-wheel course.</li>
+        <li><b>Pass the knowledge and vision tests.</b> The MVC then validates your permit.</li>
+        <li><b>Practice with a supervising driver.</b> Drivers under 21 practice for 6 months. Drivers 21 or older practice for 3 months.</li>
+        <li><b>Log your hours.</b> Drivers under 21 need at least 50 practice hours, with 10 hours in darkness. A parent or supervising driver signs form BA-CSD.</li>
+        <li><b>Pass the road test.</b> If you fail, you can test again in 14 days.</li>
+        <li><b>Drive on a probationary license for 1 year.</b> Then upgrade to a basic license.</li>
+      </ol>
+      <p>You have 2 years from the date of your permit to pass the tests and get your probationary license. The probationary year comes after that.</p>
+
+      <h3 id="n-gdlrules">Restrictions for GDL drivers under 21</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Rule</th><th>Detail</th></tr>
+        <tr><td>Curfew</td><td class="v">No driving from 11:01 p.m. to 5:00 a.m.</td></tr>
+        <tr><td>Passengers</td><td>Parents, guardians, and your own dependents, plus <b>1</b> other passenger. With a parent or guardian in the car, the 1-passenger limit does not apply.</td></tr>
+        <tr><td>Phones and devices</td><td>No phones or interactive devices, hand-held or hands-free. This rule applies to permit and probationary drivers of any age.</td></tr>
+        <tr><td>Seat belts</td><td>Everyone in the car wears a seat belt</td></tr>
+        <tr><td>Decals</td><td>1 red reflective decal on the top-left corner of each license plate, front and rear</td></tr>
+        <tr><td>Decal cost</td><td class="v">$4 a pair at any MVC agency</td></tr>
+        <tr><td>Fine for any GDL violation</td><td class="v">$100</td></tr>
+      </table></div>
+
+      <h3 id="n-supervisor">Supervising driver</h3>
+      <p>The supervising driver sits in the front seat. This person must be at least 21, hold a valid New Jersey license, and have at least 3 years of driving experience.</p>
+
+      <h2 id="g-points">Point system and penalties</h2>
+      <p class="intro">The MVC adds points to your record for each moving violation. More points bring surcharges and then a suspension.</p>
+
+      <h3 id="n-points">Point limits and ways to lose points</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Points</th><th>Result</th></tr>
+        <tr><td class="v">6 or more in 3 years</td><td>$150 surcharge, plus $25 for each point over 6. The MVC checks again each year as old points age out.</td></tr>
+        <tr><td class="v">12 or more</td><td>License suspension</td></tr>
+      </table></div>
+      <ul>
+        <li>Drive 1 full year with no violations and no suspension: the MVC removes 3 points.</li>
+        <li>Finish an MVC-approved defensive driving course: the MVC removes 2 points. You can do this once every 5 years. Neither credit lowers the points the MVC uses for surcharges.</li>
+      </ul>
+
+      <h3 id="n-violations">Common violations</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Violation</th><th>Points</th></tr>
+        <tr><td>Speeding 1 to 14 mph over the limit</td><td class="v">2</td></tr>
+        <tr><td>Speeding 15 to 29 mph over</td><td class="v">4</td></tr>
+        <tr><td>Speeding 30 mph or more over</td><td class="v">5</td></tr>
+        <tr><td>Tailgating</td><td class="v">5</td></tr>
+        <tr><td>Reckless driving</td><td class="v">5</td></tr>
+        <tr><td>Improper passing of a school bus</td><td class="v">5</td></tr>
+        <tr><td>Racing on a highway</td><td class="v">5</td></tr>
+        <tr><td>Improper passing of a frozen dessert (ice cream) truck</td><td class="v">4</td></tr>
+        <tr><td>Passing in a no-passing zone</td><td class="v">4</td></tr>
+        <tr><td>Improper turn, improper U-turn</td><td class="v">3</td></tr>
+        <tr><td>Hand-held phone, 3rd offense</td><td class="v">3</td></tr>
+        <tr><td>Failure to yield to a pedestrian in a crosswalk</td><td class="v">2</td></tr>
+        <tr><td>Failure to stop at a stop sign or red light</td><td class="v">2</td></tr>
+        <tr><td>Careless driving</td><td class="v">2</td></tr>
+        <tr><td>Leaving the scene of a crash with injury</td><td class="v">8</td></tr>
+      </table></div>
+
+      <h3 id="n-phone">Hand-held phone fines</h3>
+      <div class="scroll-x"><table class="ntable">
+        <tr><th>Offense</th><th>Fine</th></tr>
+        <tr><td>1st</td><td class="v">$200 to $400</td></tr>
+        <tr><td>2nd</td><td class="v">$400 to $600</td></tr>
+        <tr><td>3rd or more</td><td class="v">$600 to $800, 3 points, and a possible 90-day suspension</td></tr>
+      </table></div>
+
+      <h2 id="g-safe">Safe driving</h2>
+
+      <h3 id="n-schoolbus">School buses</h3>
+      <ul>
+        <li>When a school bus shows flashing red lights, stop at least 25 feet away. Stay stopped until the lights go off and the children are safe.</li>
+        <li>This rule applies from both directions on a two-lane road.</li>
+        <li>On a divided highway with a median or safety island, traffic on the other side slows to 10 mph or less.</li>
+        <li>When a bus is parked at the curb at a school, loading or unloading children on that side of the street, you may pass at 10 mph or less. Otherwise, the 25-foot stop rule applies.</li>
+      </ul>
+
+      <h3 id="n-icecream">Frozen dessert (ice cream) trucks</h3>
+      <ul>
+        <li>When the truck shows flashing red lights or a stop arm, stop.</li>
+        <li>Then pass slowly, at no more than 15 mph, and watch for children.</li>
+        <li>You do not need to stop on a dual highway when a median separates you from the truck.</li>
+        <li>Always stop for a person who crosses the road to or from the truck.</li>
+      </ul>
+
+      <h3 id="n-seatbelts">Seat belts and child seats</h3>
+      <ul>
+        <li>Everyone in the car must wear a seat belt, front and back.</li>
+        <li>Children under 2 and under 30 pounds ride in a rear-facing seat with a five-point harness.</li>
+        <li>Children under 4 and under 40 pounds ride in a harness seat (rear-facing or forward-facing).</li>
+        <li>Children under 8 and under 57 inches ride in a harness seat or a booster seat, in the rear seat.</li>
+        <li>Never put a rear-facing seat in front of an active airbag.</li>
+      </ul>
+
+      <h3 id="n-following">Following distance and speed</h3>
+      <ul>
+        <li>Keep at least 3 seconds between you and the car ahead. Add time in rain, snow, or fog.</li>
+        <li>Slow down before a curve, not in it.</li>
+        <li>Slow down on narrow or winding roads, at intersections and railroad crossings, and on wet roads.</li>
+        <li>At night, drive at a speed that lets you stop within the distance your headlights show.</li>
+        <li>Stopping distance depends on reaction time, brakes, tires, speed, and the road surface. It does not depend on the time of day.</li>
+      </ul>
+
+      <h3 id="n-passing">Passing</h3>
+      <ul>
+        <li>Pass on the left. You may pass on the right only when the road has two or more lanes in your direction, or when the car ahead turns left and there is room. Never leave the pavement to pass.</li>
+        <li>Do not pass on hills, on curves, at intersections, or at railroad crossings.</li>
+        <li>When someone passes you, keep right and do not speed up.</li>
+        <li>Keep right on all roads except to pass.</li>
+      </ul>
+
+      <h3 id="n-emergencies">Emergencies</h3>
+      <ul>
+        <li><b>Skid:</b> Take your foot off the gas. Steer in the direction you want the front of the car to go.</li>
+        <li><b>Brake failure:</b> Pump the brake pedal. Use the parking brake slowly. Shift to a lower gear.</li>
+        <li><b>Tire blowout:</b> Hold the wheel firmly. Ease off the gas. Do not brake hard.</li>
+        <li><b>Wipers stop in rain or snow:</b> Slow down, turn on your hazard lights, and pull off the road.</li>
+        <li><b>Collision you cannot avoid:</b> Hit something that will give way rather than something rigid. Hit something still rather than something that moves toward you. Try for a glancing blow.</li>
+        <li><b>Car goes into water:</b> Open a window and get out fast.</li>
+      </ul>
+
+      <h3 id="n-sharing">Sharing the road</h3>
+      <ul>
+        <li>When you pass bicycles, pedestrians, or scooters, move over a lane if you can. If not, give at least 4 feet. If neither is safe, slow to 25 mph or less and be ready to stop.</li>
+        <li>Trucks have large blind spots (“No-Zones”). If you cannot see the truck driver in the truck’s mirror, the driver cannot see you.</li>
+        <li>Watch for motorcycles. They are small and hard to see.</li>
+      </ul>
+
+      <h3 id="n-carry">What to carry when you drive</h3>
+      <p>Keep your driver license (or permit), the vehicle registration, and the insurance card with you.</p>
+
+      <h2 id="g-tips">Test-day tips</h2>
+      <ol>
+        <li>Study the numbers tables in these notes on the day before the test.</li>
+        <li>Bring your permit and all your 6 Points of ID documents.</li>
+        <li>Bring your glasses or contact lenses for the vision test.</li>
+        <li>Read each question two times. Watch for words such as “not”, “never”, and “always”.</li>
+        <li>When two answers look right, check for “all of the above”. It is often correct on this test.</li>
+        <li>Skip a hard question and come back to it.</li>
+        <li>If you fail, study the topics you missed and test again after 7 days.</li>
+      </ol>
+
+      <div class="sources">
+        <p>Laws change. Check the current Driver Manual before your test. The test questions come from it.</p>
+        <p class="row">
+          <a href="https://www.nj.gov/mvc/license/sample_knowledge_test.htm" target="_blank" rel="noopener">NJ MVC sample knowledge test</a>
+          <a href="https://www.nj.gov/mvc/license/knowledgetest.htm" target="_blank" rel="noopener">NJ MVC knowledge test</a>
+          <a href="https://www.nj.gov/mvc/license/firstlic.htm" target="_blank" rel="noopener">First driver license &amp; Driver Manual</a>
+        </p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script>
+// ---------------- question bank ----------------
+// t: 1-3 = the study guide's practice tests (guide order and answer key). No t = extra questions written from the guide's review notes.
+// k: study-note topic, s: sign shape to draw, a: index of the correct option, w: why.
+const QUESTIONS = [
+  // Practice Test 1: Rules of the road and key numbers
+  {id:"t1-1",t:1,k:"speed",q:"What is the speed limit in a school zone when no sign shows a different limit?",o:["15 mph","25 mph","35 mph","20 mph"],a:1,w:"School, business, and residential zones are 25 mph."},
+  {id:"t1-2",t:1,k:"speed",q:"What is the speed limit on an interstate when no sign shows a different limit?",o:["50 mph","55 mph","65 mph","70 mph"],a:1,w:"With no sign, interstates are 55 mph. Some sections are posted at 65 mph."},
+  {id:"t1-3",t:1,k:"speed",q:"What is the speed limit on “all other roads” when no sign shows a limit?",o:["35 mph","40 mph","50 mph","55 mph"],a:2,w:"All other roads are 50 mph."},
+  {id:"t1-4",t:1,k:"distances",q:"How close to a fire hydrant may you park?",o:["5 feet","10 feet","15 feet","25 feet"],a:1,w:"Stay 10 feet from a hydrant."},
+  {id:"t1-5",t:1,k:"distances",q:"How close to a crosswalk at an intersection may you park?",o:["10 feet","15 feet","20 feet","25 feet"],a:3,w:"Stay 25 feet from a crosswalk or intersection."},
+  {id:"t1-6",t:1,k:"distances",q:"How close to a stop sign may you park?",o:["25 feet","30 feet","50 feet","100 feet"],a:2,w:"Stay 50 feet from a stop sign."},
+  {id:"t1-7",t:1,k:"distances",q:"How close to the nearest rail of a railroad crossing may you park?",o:["25 feet","50 feet","75 feet","100 feet"],a:1,w:"Stay 50 feet from the nearest rail."},
+  {id:"t1-8",t:1,k:"schoolbus",q:"A school bus ahead shows flashing red lights. How far back must you stop?",o:["At least 10 feet","At least 15 feet","At least 25 feet","Directly behind the bus"],a:2,w:"Stop at least 25 feet from the bus."},
+  {id:"t1-9",t:1,k:"distances",q:"When must you turn on your headlights?",o:["When your wipers are on","Half an hour after sunset","Until half an hour before sunrise","All of the above"],a:3,w:"All three are required by law."},
+  {id:"t1-10",t:1,k:"distances",q:"Within what distance of an oncoming car must you dim your high beams?",o:["200 feet","300 feet","500 feet","1,000 feet"],a:2,w:"Dim within 500 feet of oncoming traffic."},
+  {id:"t1-11",t:1,k:"following",q:"In good weather you stay at least 3 seconds behind the car ahead. What should you do with that gap in bad weather?",o:["Keep it the same","Decrease it","Increase it","Ignore it"],a:2,w:"Add more time in rain, snow, or fog."},
+  {id:"t1-12",t:1,k:"following",q:"Your stopping distance never depends on:",o:["Your reaction time","The time of day","The condition of your brakes","The condition of your tires"],a:1,w:"This matches the MVC sample test. At night you still see less, so drive slower."},
+  {id:"t1-13",t:1,k:"following",q:"What is the best way to drive through a curve?",o:["Brake hard in the middle of the curve","Speed up before the curve","Slow down before you enter the curve","Drive on the center line"],a:2,w:"Slow down before the curve, not in it."},
+  {id:"t1-14",t:1,k:"sharing",q:"What does the law ask when you pass a bicycle or pedestrian?",o:["1 foot","2 feet","Move over a lane if you can. If not, leave at least 4 feet. If neither is safe, slow to 25 mph or less and be ready to stop.","One full lane at all times"],a:2,w:"Move over a lane, or give 4 feet. If neither is safe, slow to 25 mph or less."},
+  {id:"t1-15",t:1,k:"pedestrians",q:"On a road with several lanes, about how far before a crosswalk should you stop for a pedestrian?",o:["5 feet","10 feet","30 feet","100 feet"],a:2,w:"The MVC advises about 30 feet, so drivers in the next lane can see the pedestrian."},
+
+  // Practice Test 2: Signs, right of way and safe driving
+  {id:"t2-1",t:2,k:"shapes",s:"octagon",q:"What does an eight-sided (octagon) sign mean?",o:["Yield","Stop","Warning ahead","School zone"],a:1,w:"Only a stop sign has eight sides."},
+  {id:"t2-2",t:2,k:"shapes",s:"pentagon",q:"What does a five-sided (pentagon) sign mean?",o:["No passing zone","Railroad crossing","School zone or school crossing","Hospital"],a:2,w:"The pentagon marks schools."},
+  {id:"t2-3",t:2,k:"shapes",s:"diamond",q:"What does a diamond-shaped sign mean?",o:["A warning of a hazard ahead","A rule you must obey","Directions to a city","A service area"],a:0,w:"Diamond signs warn of hazards."},
+  {id:"t2-4",t:2,k:"signals",q:"What must you do at a flashing red traffic signal?",o:["Slow down at the light","Drive on with care, without stopping","Merge to the right","Stop before you enter the intersection"],a:3,w:"Treat a flashing red light as a stop sign."},
+  {id:"t2-5",t:2,k:"signals",q:"What does a flashing yellow signal mean?",o:["Stop and wait for green","Slow down and go with care","The road is closed","Only buses may go"],a:1,w:"Flashing yellow means caution."},
+  {id:"t2-6",t:2,k:"signals",q:"The traffic signal at an intersection does not work. What do you do?",o:["Treat the intersection as a four-way stop","Go through at normal speed","Honk and go","Turn right only"],a:0,w:"A dead signal becomes a four-way stop."},
+  {id:"t2-7",t:2,k:"lines",q:"A broken yellow line is on your side of the center. What may you do?",o:["Never pass","Park on it","Pass when it is safe","Drive on it"],a:2,w:"A broken line on your side permits passing."},
+  {id:"t2-8",t:2,k:"emergency",q:"You hear a siren behind you. What must you do?",o:["Speed up to clear the way","Pull to the right edge and stop","Stop in your lane","Keep driving at the same speed"],a:1,w:"Pull right, stop, and let it pass."},
+  {id:"t2-9",t:2,k:"emergency",q:"A police car is stopped on the shoulder with flashing lights. What does the Move Over law ask you to do?",o:["Honk to warn the officer","Stop behind the police car","Speed up to pass quickly","Move one lane away, or slow down below the limit if you cannot"],a:3,w:"Move over a lane, or slow down. Fine: $100 to $500."},
+  {id:"t2-10",t:2,k:"intersections",q:"Two cars reach a four-way stop at the same time. Who goes first?",o:["The car on the right","The car on the left","The larger car","The faster car"],a:0,w:"The car on the left yields to the car on the right."},
+  {id:"t2-11",t:2,k:"njturns",q:"What is a jughandle used for?",o:["Parking","A U-turn for trucks only","A left turn, made from a ramp on the right","An emergency stop"],a:2,w:"Exit right, loop around, then cross."},
+  {id:"t2-12",t:2,k:"njturns",q:"When may you turn right on a red light in New Jersey?",o:["Never","After a full stop, unless a sign says no","Only at night","Without stopping, if no cars come"],a:1,w:"Stop fully and yield first."},
+  {id:"t2-13",t:2,k:"icecream",q:"When do you NOT need to stop for an ice cream truck with flashing red lights?",o:["When no children are visible","When you are in a hurry","On a one-way street","On a dual highway, with a median between you and the truck"],a:3,w:"A median separates you from the children."},
+  {id:"t2-14",t:2,k:"emergencies",q:"Your car starts to skid. What should you do?",o:["Ease off the gas and steer where you want the front of the car to go","Brake as hard as you can","Speed up","Turn the wheel fast the other way"],a:0,w:"Steer in the direction you want to go."},
+  {id:"t2-15",t:2,k:"emergencies",q:"Your wipers stop in heavy rain. What should you do?",o:["Slow down","Turn on your hazard lights","Brake and pull off the road","All of the above"],a:3,w:"Do all three."},
+
+  // Practice Test 3: GDL, alcohol and penalties
+  {id:"t3-1",t:3,k:"bac",q:"A driver under 21 is under the influence at what BAC?",o:["0.01%","0.05%","0.10%","All of the above"],a:3,w:"Under 21, any BAC of 0.01% or higher counts, so all three choices are DUI."},
+  {id:"t3-2",t:3,k:"bac",q:"What is the BAC limit for a driver age 21 or older?",o:["0.02%","0.05%","0.08%","0.10%"],a:2,w:"Age 21 or older, the limit is 0.08%. A BAC of 0.08% or higher is DWI."},
+  {id:"t3-3",t:3,k:"consent",q:"What is the Implied Consent Law?",o:["Permission for someone else to drive your car","You agree to a breath test when police arrest you for drunk driving","All passengers must wear seat belts","None of the above"],a:1,w:"Refusal is a separate offense."},
+  {id:"t3-4",t:3,k:"alcohol",q:"A 5-ounce glass of wine holds the same alcohol as:",o:["One pint of whiskey","A gallon of wine","A 6-pack of beer","One 12-ounce can of beer"],a:3,w:"One drink is one beer, one glass of wine, or one shot."},
+  {id:"t3-5",t:3,k:"alcohol",q:"What is the only thing that makes a person sober?",o:["Time","Black coffee","A cold shower","Fresh air"],a:0,w:"Only time removes alcohol from the body."},
+  {id:"t3-6",t:3,k:"gdlrules",q:"A permit or probationary driver under 21 may not drive during which hours?",o:["9:00 p.m. to 6:00 a.m.","12:01 a.m. to 5:00 a.m.","11:01 p.m. to 5:00 a.m.","10:00 p.m. to 7:00 a.m."],a:2,w:"Curfew runs from 11:01 p.m. to 5:00 a.m."},
+  {id:"t3-7",t:3,k:"gdlrules",q:"A probationary driver under 21 drives with no parent or guardian in the car. How many passengers may ride, not counting dependents?",o:["None","1","2","3"],a:1,w:"One passenger, plus dependents. A parent or guardian in the car removes the limit."},
+  {id:"t3-8",t:3,k:"gdlrules",q:"Where must a GDL driver under 21 put the red decals?",o:["On the rear window","On the windshield","On the rear plate only","On the top-left corner of the front and rear plates"],a:3,w:"One decal on each plate, top-left corner."},
+  {id:"t3-9",t:3,k:"gdlrules",q:"What is the fine for breaking any GDL rule?",o:["$100","$50","$250","$500"],a:0,w:"Each GDL violation costs $100."},
+  {id:"t3-10",t:3,k:"supervisor",q:"Who may supervise a permit driver?",o:["Any licensed driver","A driver age 18 or older","A New Jersey licensed driver age 21 or older, with at least 3 years of experience","A friend with a permit"],a:2,w:"21 or older, NJ license, 3 years of driving."},
+  {id:"t3-11",t:3,k:"gdlsteps",q:"How many practice hours must a driver under 21 log before the road test?",o:["20 hours","50 hours, with 10 in darkness","30 hours, with 5 in darkness","No hours are required"],a:1,w:"50 hours, 10 in darkness. A parent or supervising driver certifies them on form BA-CSD."},
+  {id:"t3-12",t:3,k:"points",q:"How many points within 3 years bring an MVC surcharge?",o:["2","3","4","6"],a:3,w:"6 points in 3 years bring a $150 surcharge, plus $25 for each point over 6."},
+  {id:"t3-13",t:3,k:"points",q:"How many points bring a license suspension?",o:["12","6","8","15"],a:0,w:"12 points bring a suspension."},
+  {id:"t3-14",t:3,k:"violations",q:"How many points do you get for tailgating?",o:["2","3","5","8"],a:2,w:"Tailgating is 5 points."},
+  {id:"t3-15",t:3,k:"phone",q:"What is the fine for a first offense of using a hand-held phone while you drive?",o:["$50 to $100","$200 to $400","$400 to $600","$1,000"],a:1,w:"The fine rises with each offense."},
+
+  // Extra questions from the guide's review notes (used in the mock exam)
+  {id:"x1",k:"about",q:"How many questions does the NJ knowledge test have, and how many must you get right?",o:["25 questions, 20 right","50 questions, 40 right","50 questions, 35 right","40 questions, 30 right"],a:1,w:"The test has 50 multiple-choice questions. You must answer 40 correctly (80%) to pass."},
+  {id:"x2",k:"about",q:"You fail the knowledge test. How long must you wait before you can take it again?",o:["The next day","7 days","14 days","30 days"],a:1,w:"If you fail the knowledge test, you can test again in 7 days."},
+  {id:"x3",k:"speed",q:"Some low-density business and residential districts have what speed limit when no sign shows a different one?",o:["25 mph","35 mph","45 mph","55 mph"],a:1,w:"Some low-density business and residential districts are 35 mph."},
+  {id:"x4",k:"speed",q:"It is raining hard and the posted limit is 50 mph. How fast should you drive?",o:["50 mph, the posted limit","Slower than 50 mph","55 mph, to keep up with traffic","Any speed, if your hazard lights are on"],a:1,w:"A speed limit is the top speed for good conditions. In rain, snow, fog, or heavy traffic, drive slower."},
+  {id:"x5",k:"schoolbus",q:"A school bus is parked at the curb at a school, loading children on your side of the street. What is the fastest you may pass it?",o:["5 mph","10 mph","15 mph","25 mph"],a:1,w:"You may pass at 10 mph or less. Otherwise, the 25-foot stop rule applies."},
+  {id:"x6",k:"distances",q:"How close to a fire station driveway may you park on the same side of the street?",o:["10 feet","20 feet","50 feet","100 feet"],a:1,w:"Stay 20 feet from a fire station driveway (75 feet on the opposite side, when signs show it)."},
+  {id:"x7",k:"distances",q:"When must you turn on your headlights during the day?",o:["When you see less than 500 feet ahead","Only on highways","Only when it snows","Never during the day"],a:0,w:"Headlights go on when you see less than 500 feet, when your wipers are on, and from half an hour after sunset to half an hour before sunrise."},
+  {id:"x8",k:"following",q:"What is the least following distance in good weather?",o:["1 second","2 seconds","3 seconds","10 seconds"],a:2,w:"Keep at least 3 seconds between you and the car ahead, and 4 or more in bad weather."},
+  {id:"x9",k:"pedestrians",q:"A car in the next lane is stopped at a crosswalk. What should you do?",o:["Pass it carefully","Stop. Never pass a car that is stopped at a crosswalk","Honk and go around","Change lanes and speed up"],a:1,w:"A pedestrian may be crossing in front of that car where you cannot see."},
+  {id:"x10",k:"pedestrians",q:"You stop at a red light next to a crosswalk. Where should your car be?",o:["Partly in the crosswalk","Behind the crosswalk, with no part of the car in it","In the middle of the crosswalk","Anywhere, if no one is walking"],a:1,w:"Do not stop with any part of your car in the crosswalk."},
+  {id:"x11",k:"pedestrians",q:"What is the penalty for failing to yield to a pedestrian in a crosswalk?",o:["$50 fine","$100 fine and 1 point","$200 fine, 2 points, and up to 15 days of community service","$1,000 fine and a license suspension"],a:2,w:"The penalty is a $200 fine, 2 points, and up to 15 days of community service."},
+  {id:"x12",k:"pedestrians",q:"You turn on a green light. A pedestrian crosses on a “Walk” signal. Who has the right of way?",o:["The pedestrian","You, because your light is green","Whoever got there first","The car behind you"],a:0,w:"A pedestrian who crosses on a green or Walk signal has the right of way over turning cars."},
+  {id:"x13",k:"pedestrians",q:"Must you yield to a pedestrian at an intersection that has no crosswalk lines?",o:["Yes, at every intersection","No, only at marked crosswalks","Only in school zones","Only at night"],a:0,w:"Yield to pedestrians at every intersection, including ones with no crosswalk lines."},
+  {id:"x14",k:"emergency",q:"You pulled over for an ambulance with its siren on. When may you go again?",o:["After 10 seconds","After the ambulance passes","When the siren sounds far away","When the car behind you honks"],a:1,w:"Stay stopped until the emergency vehicle passes."},
+  {id:"x15",k:"emergency",q:"What is the fine for breaking the Move Over law?",o:["$50 to $100","$100 to $500","$500 to $1,000","$1,000 or more"],a:1,w:"The Move Over fine is $100 to $500."},
+  {id:"x16",k:"intersections",q:"Cars reach a four-way stop at different times. Who goes first?",o:["The first car to stop","The car on the left","The largest vehicle","The car going straight"],a:0,w:"At a four-way stop, the first car to stop goes first."},
+  {id:"x17",k:"intersections",q:"You turn left on a solid green light (not a green arrow). Who must you yield to?",o:["No one, because the light is green","Oncoming traffic and pedestrians","Only pedestrians","Only cars behind you"],a:1,w:"When you turn left, yield to oncoming traffic and pedestrians."},
+  {id:"x18",k:"intersections",q:"You pull out of a parking lot onto a road. What must you do?",o:["Stop and yield to all traffic and pedestrians","Merge without stopping","Honk, then pull out","Yield only to trucks"],a:0,w:"When you enter a road from a driveway, alley, or parking lot, stop and yield to all traffic and pedestrians."},
+  {id:"x19",k:"intersections",q:"The light is green, but traffic is backed up past the intersection. What should you do?",o:["Go and stop in the intersection","Wait until you can get all the way through","Honk to move the cars ahead","Drive around on the shoulder"],a:1,w:"Do not enter an intersection if you cannot get all the way through it."},
+  {id:"x20",k:"njturns",q:"Signs on a New Jersey highway send left turns to a jughandle. How do you turn left?",o:["Turn left from the left lane","Make a U-turn across the median","Exit right onto the ramp, which loops you around to cross the highway","Stop in the left lane and wait for a gap"],a:2,w:"A jughandle is a ramp on the right. Many NJ highways have no left-turn lanes, so you exit right and the ramp loops you around to cross."},
+  {id:"x21",k:"shapes",s:"triangle",q:"What does a triangle sign with the point facing down mean?",o:["Stop","Yield","Railroad crossing","No passing zone"],a:1,w:"A triangle with the point down means yield."},
+  {id:"x22",k:"shapes",s:"round",q:"What does a round sign mean?",o:["Railroad crossing ahead","School zone","Yield","Hospital ahead"],a:0,w:"A round sign warns of a railroad crossing ahead."},
+  {id:"x23",k:"shapes",s:"pennant",q:"What does a pennant-shaped (sideways triangle) sign mean?",o:["Yield","Stop ahead","No passing zone","Steep hill"],a:2,w:"The pennant marks a no passing zone."},
+  {id:"x24",k:"shapes",s:"rectangle",q:"What does a vertical rectangle sign usually show?",o:["A rule, such as a speed limit or no turn","A hazard ahead","A school crossing","A railroad crossing"],a:0,w:"Vertical rectangles show rules, such as speed limits or no-turn signs."},
+  {id:"x25",k:"shapes",s:"crossbuck",q:"What does a crossbuck (X-shaped) sign mean?",o:["Railroad crossing. Yield to trains","Intersection ahead","Road closed","Hospital"],a:0,w:"The crossbuck marks a railroad crossing. Yield to trains."},
+  {id:"x26",k:"colors",q:"What does an orange sign mean?",o:["Work zone","School zone","Parks and recreation","Services"],a:0,w:"Orange signs mark work zones."},
+  {id:"x27",k:"colors",q:"What does a brown sign show?",o:["Services such as gas and food","Parks and recreation areas","Directions and distances","A general warning"],a:1,w:"Brown signs point to parks and recreation areas."},
+  {id:"x28",k:"colors",q:"What does a blue sign show?",o:["Services such as gas, food, or a hospital","Rules","Work zones","School crossings"],a:0,w:"Blue signs show services."},
+  {id:"x29",k:"colors",q:"What does a fluorescent yellow-green sign warn about?",o:["Schools, pedestrians, and bicycles","Work zones","Railroad crossings","Sharp curves only"],a:0,w:"Fluorescent yellow-green marks school, pedestrian, and bicycle warnings."},
+  {id:"x30",k:"colors",q:"What does a green sign show?",o:["Directions and distances","Stop or yield","Services","Work zones"],a:0,w:"Green signs show directions and distances."},
+  {id:"x31",k:"colors",q:"What does a red sign usually mean?",o:["Stop, yield, do not enter, or wrong way","Directions to a city","A park","A general warning"],a:0,w:"Red signs mean stop, yield, do not enter, or wrong way."},
+  {id:"x32",k:"signals",q:"What does a steady yellow light mean?",o:["Speed up to beat the red","The light will turn red. Stop if you can do so safely","Stop and stay stopped","Pedestrians must cross now"],a:1,w:"A steady yellow means the light will turn red. Stop if you can do so safely."},
+  {id:"x33",k:"signals",q:"You have a green arrow. What do you do?",o:["Go in the arrow’s direction with care, and yield to pedestrians","Stop, then go","Go in any direction","Wait for a solid green"],a:0,w:"Go in the arrow’s direction with care. Yield to pedestrians."},
+  {id:"x34",k:"signals",q:"The light turns green. What must you do before you go?",o:["Nothing, go right away","Yield to pedestrians and cars still in the intersection","Honk twice","Wait 5 seconds"],a:1,w:"Go on green after you yield to pedestrians and cars still in the intersection."},
+  {id:"x35",k:"lines",q:"What do yellow lines separate?",o:["Traffic moving in opposite directions","Lanes moving in the same direction","Bike lanes","Parking spaces"],a:0,w:"Yellow lines separate traffic that moves in opposite directions."},
+  {id:"x36",k:"lines",q:"What do white lines separate?",o:["Traffic moving in opposite directions","Lanes moving in the same direction","The road from the shoulder only","Bus lanes only"],a:1,w:"White lines separate lanes that move in the same direction."},
+  {id:"x37",k:"lines",q:"What does a double solid yellow line mean?",o:["Pass with care","No passing from either side","Passing allowed from the left side","A bike lane"],a:1,w:"Double solid yellow means no passing from either side."},
+  {id:"x38",k:"lines",q:"A solid yellow centerline is on your side. What does it mean?",o:["Do not pass","Pass when it is safe","Only trucks may pass","You may park"],a:0,w:"A solid centerline on your side means do not pass."},
+  {id:"x39",k:"rail",q:"The railroad gate is down, but you do not see a train. What do you do?",o:["Drive around the gate slowly","Stop and wait. Never go around a lowered gate","Honk and cross","Cross if the lights stop flashing"],a:1,w:"Never go around a lowered gate."},
+  {id:"x40",k:"rail",q:"What should you not do while you cross railroad tracks?",o:["Shift gears","Keep moving","Look ahead","Keep both hands on the wheel"],a:0,w:"Do not shift gears while you cross the tracks."},
+  {id:"x41",k:"rail",q:"When must you stop at a railroad crossing?",o:["When lights flash","When a gate is down","When a train comes","All of the above"],a:3,w:"Stop when lights flash, a gate is down, or a train comes."},
+  {id:"x42",k:"bac",q:"What is the BAC limit for a commercial driver in a commercial vehicle?",o:["0.01%","0.04%","0.08%","0.10%"],a:1,w:"Commercial drivers in a commercial vehicle are DWI at 0.04% or higher."},
+  {id:"x43",k:"bac",q:"Your BAC is below the legal limit. Can you still get a DWI?",o:["No, never","Yes, if alcohol or drugs make you an unsafe driver","Only if you are under 18","Only on a highway"],a:1,w:"You can get a DWI with a lower BAC if alcohol or drugs make you an unsafe driver."},
+  {id:"x44",k:"consent",q:"What happens if you refuse a breath test after a DWI arrest?",o:["Nothing","You get a separate charge with its own penalties","You must wait 1 hour and test again","The DWI charge is dropped"],a:1,w:"Refusal is a separate charge with its own penalties."},
+  {id:"x45",k:"dwi",q:"What is the standard fine for a first DWI with a BAC of 0.08% to under 0.10%?",o:["$100 to $200","$250 to $400","$300 to $500","$1,000"],a:1,w:"First offense at 0.08% to under 0.10%: $250 to $400, plus an ignition interlock for 3 months."},
+  {id:"x46",k:"dwi",q:"A first offender with a BAC of 0.08% to under 0.10% must use an ignition interlock for how long?",o:["1 month","3 months","12 months","3 years"],a:1,w:"3 months of ignition interlock."},
+  {id:"x47",k:"dwi",q:"What surcharge can first DWI offenders get?",o:["$100, once","$1,000 each year for 3 years","$250 each year for 2 years","No surcharge"],a:1,w:"All first offenders can get a $1,000 surcharge each year for 3 years."},
+  {id:"x48",k:"dwi",q:"How long can first DWI offenders spend at an Intoxicated Driver Resource Center (IDRC)?",o:["1 to 2 hours","12 to 48 hours","7 days","30 days"],a:1,w:"12 to 48 hours at an IDRC."},
+  {id:"x49",k:"dwi",q:"What penalties can a third DWI offense bring?",o:["A warning","A $1,000 fine, 180 days in jail, and a long license suspension","A $250 fine only","A 30-day suspension only"],a:1,w:"Penalties for a third offense can include a $1,000 fine, 180 days in jail, and a long license suspension."},
+  {id:"x50",k:"alcohol",q:"A 1.5-ounce shot of liquor holds about the same alcohol as:",o:["One 12-ounce beer","Three beers","A bottle of wine","Half a beer"],a:0,w:"One 12-ounce beer, one 5-ounce glass of wine, and one 1.5-ounce shot hold the same amount of alcohol."},
+  {id:"x51",k:"alcohol",q:"When does alcohol start to slow your reaction time?",o:["Before you feel drunk","Only after 4 drinks","Only when your BAC is over 0.08%","Only at night"],a:0,w:"Alcohol slows reaction time and hurts judgment before you feel drunk."},
+  {id:"x52",k:"alcohol",q:"Which is a sign of a drunk driver?",o:["Weaving between lanes","Driving much slower than traffic","Sudden stops","All of the above"],a:3,w:"Weaving, driving much slower than traffic, and sudden stops are all signs."},
+  {id:"x53",k:"alcohol",q:"You see a driver you think is drunk. What should you do?",o:["Pass them fast","Keep your distance and call the police when it is safe","Follow closely to warn others","Honk until they pull over"],a:1,w:"Keep your distance and call the police when it is safe."},
+  {id:"x54",k:"gdlsteps",q:"What is the youngest age at which you can get a special learner’s permit, if you take a behind-the-wheel course?",o:["15","16","17","18"],a:1,w:"You can get a special learner’s permit at 16 with a behind-the-wheel course."},
+  {id:"x55",k:"gdlsteps",q:"How long must a driver under 21 practice with a supervising driver before the road test?",o:["1 month","3 months","6 months","1 year"],a:2,w:"Drivers under 21 practice for 6 months. Drivers 21 or older practice for 3 months."},
+  {id:"x56",k:"gdlsteps",q:"You fail the road test. How soon can you test again?",o:["7 days","14 days","30 days","6 months"],a:1,w:"You can take the road test again in 14 days."},
+  {id:"x57",k:"gdlsteps",q:"How long do you drive on a probationary license before you can upgrade to a basic license?",o:["6 months","1 year","2 years","3 years"],a:1,w:"Drive on a probationary license for 1 year, then upgrade to a basic license."},
+  {id:"x58",k:"gdlsteps",q:"From the date of your permit, how long do you have to pass the tests and get your probationary license?",o:["6 months","1 year","2 years","5 years"],a:2,w:"You have 2 years from the date of your permit."},
+  {id:"x59",k:"gdlrules",q:"A probationary driver age 25 wants to use a hands-free phone while driving. Is that allowed?",o:["Yes, drivers over 21 may","No. Permit and probationary drivers of any age may not use phones, hand-held or hands-free","Yes, if it is hands-free","Only at red lights"],a:1,w:"The phone rule applies to permit and probationary drivers of any age."},
+  {id:"x60",k:"gdlrules",q:"How much does a pair of GDL decals cost?",o:["Free","$4","$10","$25"],a:1,w:"$4 a pair at any MVC agency."},
+  {id:"x61",k:"supervisor",q:"Where must the supervising driver sit?",o:["In the front seat","Anywhere in the car","In the back seat","In a car following you"],a:0,w:"The supervising driver sits in the front seat."},
+  {id:"x62",k:"points",q:"You have 8 points on your record from the last 3 years. What is your MVC surcharge for that year?",o:["$100","$150","$200","$250"],a:2,w:"$150 for 6 points, plus $25 for each point over 6: $150 + $50 = $200."},
+  {id:"x63",k:"points",q:"You have 5 points. Then you drive one full year with no violations and no suspension. What does the MVC do?",o:["Removes 3 points","Removes all points","Removes 1 point","Nothing"],a:0,w:"A full clean year removes 3 points, which leaves you with 2."},
+  {id:"x64",k:"points",q:"You have 4 points and have not taken a defensive driving course in the last 5 years. How many points does finishing an MVC-approved course remove?",o:["1","2","3","All 4"],a:1,w:"The course removes 2 points, and you can use it once every 5 years. This credit and the 3-point credit for a clean year do not lower the points the MVC uses to set surcharges."},
+  {id:"x65",k:"violations",q:"How many points do you get for speeding 1 to 14 mph over the limit?",o:["1","2","4","5"],a:1,w:"Speeding 1 to 14 mph over is 2 points."},
+  {id:"x66",k:"violations",q:"How many points do you get for speeding 15 to 29 mph over the limit?",o:["2","3","4","5"],a:2,w:"Speeding 15 to 29 mph over is 4 points."},
+  {id:"x67",k:"violations",q:"How many points do you get for speeding 30 mph or more over the limit?",o:["3","4","5","8"],a:2,w:"Speeding 30 mph or more over is 5 points."},
+  {id:"x68",k:"violations",q:"How many points do you get for leaving the scene of a crash with injury?",o:["2","5","8","12"],a:2,w:"Leaving the scene of a crash with injury is 8 points."},
+  {id:"x69",k:"violations",q:"How many points do you get for improperly passing a school bus?",o:["2","3","4","5"],a:3,w:"Improper passing of a school bus is 5 points."},
+  {id:"x70",k:"violations",q:"How many points do you get for failing to stop at a stop sign or red light?",o:["1","2","3","5"],a:1,w:"Failure to stop at a stop sign or red light is 2 points."},
+  {id:"x71",k:"violations",q:"How many points do you get for passing in a no-passing zone?",o:["2","3","4","5"],a:2,w:"Passing in a no-passing zone is 4 points."},
+  {id:"x72",k:"violations",q:"How many points do you get for improperly passing a frozen dessert (ice cream) truck?",o:["2","3","4","5"],a:2,w:"Improper passing of a frozen dessert truck is 4 points."},
+  {id:"x73",k:"phone",q:"What is the standard fine for a second hand-held phone offense?",o:["$200 to $400","$400 to $600","$600 to $800","$1,000"],a:1,w:"2nd offense: $400 to $600."},
+  {id:"x74",k:"phone",q:"What can a third hand-held phone offense bring?",o:["$600 to $800, 3 points, and a possible 90-day suspension","A warning","A $200 fine only","2 points only"],a:0,w:"3rd or more: $600 to $800, 3 points, and a possible 90-day suspension."},
+  {id:"x75",k:"schoolbus",q:"On a two-lane road, a school bus going the other way stops with flashing red lights. What do you do?",o:["Keep going, because it is on the other side","Stop at least 25 feet away","Slow to 10 mph and pass","Honk and pass"],a:1,w:"The stop rule applies from both directions on a two-lane road."},
+  {id:"x76",k:"schoolbus",q:"On a divided highway with a median or safety island, a school bus on the other side shows flashing red lights. What do you do?",o:["Stop at least 25 feet away","Slow to 10 mph or less","Keep your speed","Stop and wait for the bus to leave"],a:1,w:"On a divided highway with a median or safety island, traffic on the other side slows to 10 mph or less."},
+  {id:"x77",k:"schoolbus",q:"How long must you stay stopped for a school bus with flashing red lights?",o:["10 seconds","Until the lights go off and the children are safe","Until the bus door closes","Until a car behind you passes"],a:1,w:"Stay stopped until the lights go off and the children are safe."},
+  {id:"x78",k:"icecream",q:"You stopped for an ice cream truck with flashing red lights. What is the fastest you may then pass it?",o:["5 mph","10 mph","15 mph","25 mph"],a:2,w:"Pass slowly, at no more than 15 mph, and watch for children."},
+  {id:"x79",k:"icecream",q:"A child walks across the road toward an ice cream truck. What must you do?",o:["Slow down","Stop","Honk","Go around the child"],a:1,w:"Always stop for a person who crosses the road to or from the truck."},
+  {id:"x80",k:"seatbelts",q:"A child under 2 and under 30 pounds must ride in:",o:["A booster seat","A rear-facing seat with a five-point harness","A regular seat belt","The front seat"],a:1,w:"Children under 2 and under 30 pounds ride in a rear-facing seat with a five-point harness."},
+  {id:"x81",k:"seatbelts",q:"A 6-year-old who is 50 inches tall rides in a car with a back seat. How must the child ride?",o:["In a harness seat or booster seat, in the rear seat","In the front seat with a seat belt","On an adult’s lap","Anywhere, with a seat belt"],a:0,w:"Children under 8 and under 57 inches ride in a harness seat or a booster seat, in the rear seat."},
+  {id:"x82",k:"seatbelts",q:"Where should a rear-facing child seat never go?",o:["In front of an active airbag","Behind the driver","In the middle of the back seat","Behind the front passenger"],a:0,w:"Never put a rear-facing seat in front of an active airbag."},
+  {id:"x83",k:"seatbelts",q:"Who must wear a seat belt?",o:["Only the driver","Only the driver and front passenger","Everyone in the car, front and back","Only children"],a:2,w:"Everyone in the car must wear a seat belt, front and back."},
+  {id:"x84",k:"following",q:"How fast should you drive at night?",o:["At the speed limit, always","At a speed that lets you stop within the distance your headlights show","10 mph over the limit if roads are empty","As slow as possible"],a:1,w:"At night, drive at a speed that lets you stop within the distance your headlights show."},
+  {id:"x85",k:"following",q:"Your stopping distance depends on:",o:["Your speed","The road surface","Your tires","All of the above"],a:3,w:"Stopping distance depends on reaction time, brakes, tires, speed, and the road surface."},
+  {id:"x86",k:"passing",q:"When may you pass on the right?",o:["Never","When the road has two or more lanes in your direction, or the car ahead turns left and there is room","Whenever the shoulder is clear","Only on a two-lane road"],a:1,w:"Those are the only two cases. Never leave the pavement or use the shoulder to pass."},
+  {id:"x87",k:"passing",q:"Where should you not pass?",o:["On hills and curves","At intersections","At railroad crossings","All of the above"],a:3,w:"Do not pass on hills, on curves, at intersections, or at railroad crossings."},
+  {id:"x88",k:"passing",q:"Another car is passing you. What should you do?",o:["Speed up","Keep right and do not speed up","Move left to block it","Brake hard"],a:1,w:"When someone passes you, keep right and do not speed up."},
+  {id:"x89",k:"emergencies",q:"Your brakes fail. What should you do?",o:["Pump the brake pedal, use the parking brake slowly, and shift to a lower gear","Turn off the engine","Shift into neutral and coast","Pull the parking brake hard"],a:0,w:"Pump the brake pedal. Use the parking brake slowly. Shift to a lower gear."},
+  {id:"x90",k:"emergencies",q:"A tire blows out. What should you do?",o:["Brake hard","Hold the wheel firmly and ease off the gas","Speed up","Turn sharply off the road"],a:1,w:"Hold the wheel firmly. Ease off the gas. Do not brake hard."},
+  {id:"x91",k:"emergencies",q:"You cannot avoid a collision. What should you try to hit?",o:["Something that will give way, rather than something rigid","A car coming toward you","A tree","A concrete wall"],a:0,w:"Hit something that will give way rather than something rigid, and something still rather than something that moves toward you."},
+  {id:"x92",k:"emergencies",q:"Your car goes into water. What should you do?",o:["Wait inside for help","Open a window and get out fast","Call your insurance company","Turn on the hazard lights"],a:1,w:"Open a window and get out fast."},
+  {id:"x93",k:"sharing",q:"You cannot see a truck driver in the truck’s mirror. What should you assume?",o:["The driver cannot see you","The mirror is broken","You are at a safe distance","The truck is parked"],a:0,w:"Trucks have large blind spots (No-Zones). If you cannot see the driver in the mirror, the driver cannot see you."},
+  {id:"x94",k:"sharing",q:"Why should you watch closely for motorcycles?",o:["They are small and hard to see","They always go faster than cars","They must yield to cars","They cannot stop quickly"],a:0,w:"Motorcycles are small and hard to see."},
+  {id:"x95",k:"carry",q:"What must you carry when you drive?",o:["Your license or permit","The vehicle registration","The insurance card","All of the above"],a:3,w:"Keep your license (or permit), the registration, and the insurance card with you."}
+];
+
+const TOPICS = {
+  about:"About the test", speed:"Speed limits", distances:"Distances", pedestrians:"Pedestrians",
+  emergency:"Emergency vehicles", intersections:"Intersections", njturns:"New Jersey special turns",
+  shapes:"Sign shapes", colors:"Sign colors", signals:"Traffic signals", lines:"Road lines", rail:"Railroad crossings",
+  bac:"BAC limits", consent:"Implied consent", dwi:"DWI penalties", alcohol:"Facts about alcohol",
+  gdlsteps:"GDL steps", gdlrules:"GDL restrictions", supervisor:"Supervising driver",
+  points:"Point limits", violations:"Common violations", phone:"Hand-held phone fines",
+  schoolbus:"School buses", icecream:"Frozen dessert trucks", seatbelts:"Seat belts and child seats",
+  following:"Following distance", passing:"Passing", emergencies:"Emergencies", sharing:"Sharing the road", carry:"What to carry"
+};
+const TESTS = {
+  t1: "Rules of the road and key numbers",
+  t2: "Signs, right of way and safe driving",
+  t3: "GDL, alcohol and penalties"
+};
+const BY_ID = Object.fromEntries(QUESTIONS.map(q => [q.id, q]));
+const L = "ABCD";
+const EXAM_SIZE = 50;
+
+// ---------------- sign shapes ----------------
+function signSVG(kind) {
+  const k = "stroke-linejoin=\"round\"";
+  const body = {
+    octagon: `<polygon points="30,3 70,3 97,30 97,70 70,97 30,97 3,70 3,30" fill="var(--sign-red)" stroke="var(--sign-white)" stroke-width="5" ${k}/><polygon points="30,1 70,1 99,30 99,70 70,99 30,99 1,70 1,30" fill="none" stroke="var(--sign-black)" stroke-opacity=".35" stroke-width="1"/>`,
+    pentagon: `<polygon points="50,4 96,40 96,96 4,96 4,40" fill="var(--sign-ygreen)" stroke="var(--sign-black)" stroke-width="4" ${k}/>`,
+    diamond: `<polygon points="50,3 97,50 50,97 3,50" fill="var(--sign-yellow)" stroke="var(--sign-black)" stroke-width="4" ${k}/>`,
+    triangle: `<polygon points="5,10 95,10 50,92" fill="var(--sign-white)" stroke="var(--sign-red)" stroke-width="10" ${k}/>`,
+    round: `<circle cx="50" cy="50" r="46" fill="var(--sign-yellow)" stroke="var(--sign-black)" stroke-width="4"/>`,
+    pennant: `<polygon points="4,22 96,50 4,78" fill="var(--sign-yellow)" stroke="var(--sign-black)" stroke-width="4" ${k}/>`,
+    rectangle: `<rect x="22" y="4" width="56" height="92" rx="4" fill="var(--sign-white)" stroke="var(--sign-black)" stroke-width="4"/>`,
+    crossbuck: `<g transform="rotate(38 50 50)"><rect x="2" y="41" width="96" height="18" rx="2" fill="var(--sign-white)" stroke="var(--sign-black)" stroke-width="3"/></g><g transform="rotate(-38 50 50)"><rect x="2" y="41" width="96" height="18" rx="2" fill="var(--sign-white)" stroke="var(--sign-black)" stroke-width="3"/></g>`
+  }[kind];
+  return `<svg viewBox="0 0 100 100" role="img" aria-label="Sign shape: ${kind}">${body}</svg>`;
+}
+
+// ---------------- the car mascot ----------------
+function carSVG() {
+  return `<svg viewBox="0 0 64 40" aria-hidden="true">
+    <path d="M15 18 Q19 5 32 5 Q45 5 49 18 Z" fill="var(--pink)"/>
+    <path d="M20.5 17 Q23.5 9.5 31 9.5 L31 17 Z M33 9.5 Q40.5 9.5 43.5 17 L33 17 Z" fill="var(--sky)"/>
+    <rect x="3" y="16" width="58" height="17" rx="8.5" fill="var(--pink)"/>
+    <circle cx="58" cy="21.5" r="2.2" fill="var(--butter)"/>
+    <circle cx="44" cy="21.2" r="1.9" fill="var(--car-ink)"/>
+    <circle cx="51" cy="21.2" r="1.9" fill="var(--car-ink)"/>
+    <ellipse cx="41.3" cy="24.8" rx="2.3" ry="1.3" fill="var(--pink-deep)" opacity=".6"/>
+    <ellipse cx="53.7" cy="24.8" rx="2.3" ry="1.3" fill="var(--pink-deep)" opacity=".6"/>
+    <path d="M45.5 24.3 Q47.5 26.6 49.5 24.3" fill="none" stroke="var(--car-ink)" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="17" cy="33.5" r="5.5" fill="var(--car-ink)"/><circle cx="17" cy="33.5" r="2.2" fill="var(--paper)"/>
+    <circle cx="47" cy="33.5" r="5.5" fill="var(--car-ink)"/><circle cx="47" cy="33.5" r="2.2" fill="var(--paper)"/>
+  </svg>`;
+}
+function flagSVG() {
+  return `<svg viewBox="0 0 20 28" aria-hidden="true"><line x1="3" y1="2" x2="3" y2="27" stroke="var(--car-ink)" stroke-width="2" stroke-linecap="round"/><rect x="4" y="2" width="14" height="10" fill="var(--paper)" stroke="var(--car-ink)" stroke-width="1"/><rect x="4" y="2" width="3.5" height="5" fill="var(--car-ink)"/><rect x="11" y="2" width="3.5" height="5" fill="var(--car-ink)"/><rect x="7.5" y="7" width="3.5" height="5" fill="var(--car-ink)"/><rect x="14.5" y="7" width="3.5" height="5" fill="var(--car-ink)"/></svg>`;
+}
+const TEST_ICON = {
+  t1: `<svg viewBox="0 0 32 40"><rect x="1.5" y="1.5" width="29" height="37" rx="5" fill="var(--paper)" stroke="var(--car-ink)" stroke-width="2.5"/><text x="16" y="13" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="6.5" fill="var(--car-ink)">LIMIT</text><text x="16" y="32" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="17" fill="var(--car-ink)">25</text></svg>`,
+  t2: signSVG("octagon"),
+  t3: `<svg viewBox="0 0 40 28"><rect x="1.5" y="1.5" width="37" height="25" rx="6" fill="var(--sign-red)" stroke="var(--paper)" stroke-width="2"/><text x="20" y="19" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-weight="800" font-size="13" fill="var(--paper)">GDL</text></svg>`
+};
+// The car keeps its last spot so each render can drive it forward from there.
+let carP = 0;
+function road(p, attrs, extra = "") {
+  return `<div class="road" ${attrs} style="--p:${carP}"><div class="lane"></div>${extra}<div class="flag">${flagSVG()}</div><div class="car">${carSVG()}</div></div>`;
+}
+function driveCar(container, p) {
+  const el = container.querySelector(".road");
+  carP = p;
+  if (el) requestAnimationFrame(() => requestAnimationFrame(() => el.style.setProperty("--p", p)));
+}
+
+// ---------------- state ----------------
+const KEY = "nj-written-test-v1";
+function fresh() { return { best: {}, history: [], missed: [], session: null, last: null }; }
+function load() {
+  try {
+    const s = JSON.parse(localStorage.getItem(KEY));
+    if (s && typeof s === "object") return Object.assign(fresh(), s);
+  } catch (e) {}
+  return fresh();
+}
+let S = load();
+function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+
+let view = "home";
+let notesFrom = "home";
+let resultsFilter = "missed";
+let confirmReset = false;
+
+function shuffle(a) {
+  a = a.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+// "All/None of the above" stays last when choices are shuffled.
+function optionOrder(q) {
+  const pinned = [], free = [];
+  q.o.forEach((t, i) => (/^(All|None) of the above$/.test(t) ? pinned : free).push(i));
+  return shuffle(free).concat(pinned);
+}
+function orderFor(sess, id) { return (sess.order && sess.order[id]) || BY_ID[id].o.map((_, i) => i); }
+function modeLabel(m) { return { t1: "Practice Test 1", t2: "Practice Test 2", t3: "Practice Test 3", exam: "Mock exam", missed: "Missed questions" }[m]; }
+function shortLabel(m) { return { t1: "Test 1", t2: "Test 2", t3: "Test 3", exam: "Mock exam", missed: "Missed retry" }[m]; }
+function fmtDate(ts) { return new Date(ts).toLocaleDateString(undefined, { month: "short", day: "numeric" }); }
+
+// ---------------- views ----------------
+const $ = id => document.getElementById(id);
+function show(v, opts = {}) {
+  view = v;
+  for (const n of ["home", "quiz", "results", "notes"]) $("v-" + n).hidden = n !== v;
+  $("sign").classList.toggle("compact", v === "quiz");
+  if (v === "home") renderHome();
+  if (v === "quiz") renderQuiz();
+  if (v === "results") renderResults();
+  if (!opts.keepScroll) window.scrollTo(0, 0);
+}
+
+function practicePill(best) {
+  if (best === undefined) return "";
+  if (best >= 14) return `<span class="pill good">Ready</span>`;
+  if (best >= 12) return `<span class="pill warn">Passing pace</span>`;
+  return `<span class="pill plain">Keep going</span>`;
+}
+
+function renderHome() {
+  const b = S.best;
+  let h = "";
+  if (S.session) {
+    const s = S.session, a = Object.keys(s.ans).length;
+    h += `<div class="resume"><div><b>Pick up where you left off</b><span>${modeLabel(s.mode)} · ${a} of ${s.ids.length} answered</span></div>
+      <div class="row"><button class="btn primary sm" data-act="resume">Resume</button><button class="btn ghost sm" data-act="discard">Discard</button></div></div>`;
+  }
+  h += `<div class="hello"><div class="hello-car" aria-hidden="true">${carSVG()}</div><p class="lede bubble">The real test has 50 multiple-choice questions, and you need 40 right (80%) to pass. Practice here until every practice test shows 14 or 15, then try the mock exam.</p></div>`;
+
+  const ready = ["t1", "t2", "t3"].filter(t => (b[t] ?? -1) >= 14).length;
+  h += `<div class="section-head"><h2>Practice tests</h2><span class="aside num">${ready} of 3 ready (14+ out of 15)</span></div><div class="tgrid">`;
+  ["t1", "t2", "t3"].forEach((t, i) => {
+    h += `<article class="tcard">
+      <div class="tcard-head"><span class="tnum"><span class="sticker" aria-hidden="true">${TEST_ICON[t]}</span>Test ${i + 1}</span>${practicePill(b[t])}</div>
+      <h3>${TESTS[t]}</h3>
+      <p class="meta">15 questions · answer shown after each one</p>
+      <div class="tcard-foot"><span class="best">${b[t] !== undefined ? `Best <b>${b[t]}</b>/15` : "Not taken yet"}</span>
+      <button class="btn primary sm" data-act="start" data-mode="${t}">Start</button></div></article>`;
+  });
+  h += `</div>`;
+  if (ready === 3) h += `<p class="ready-note">All three practice tests are at 14 or 15. Take the mock exam, then the official <a href="https://www.nj.gov/mvc/license/sample_knowledge_test.htm" target="_blank" rel="noopener">NJ MVC sample test</a>.</p>`;
+
+  const eb = b.exam;
+  h += `<div class="section-head"><h2>Full practice</h2></div>
+    <article class="xcard">
+      <div class="marker" aria-hidden="true"><div class="marker-inner"><b>50</b><span>Qs</span></div></div>
+      <div class="xbody"><h3>Mock exam</h3>
+        <p>50 questions drawn at random from all ${QUESTIONS.length}, with the choices shuffled. You see no answers until you finish, just like the real test. Pass mark: 40.</p>
+        <div class="row"><span class="best">${eb !== undefined ? `Best <b>${eb}</b>/50 ${eb >= 40 ? `<span class="pill good">Pass</span>` : ""}` : "Not taken yet"}</span>
+        <button class="btn primary" data-act="start" data-mode="exam">Start mock exam</button></div>
+      </div>
+    </article>
+    <div class="duo">
+      <article class="tcard"><div class="tcard-head"><span class="tnum">Retry</span></div><h3>Missed questions</h3>
+        <p class="meta">${S.missed.length ? `${S.missed.length} question${S.missed.length === 1 ? "" : "s"} you got wrong. Answer one right and it leaves the list.` : "Questions you get wrong land here so you can retry them."}</p>
+        <div class="tcard-foot"><span class="best">${S.missed.length ? `<b>${S.missed.length}</b> to retry` : "Nothing to retry yet"}</span>
+        <button class="btn primary sm" data-act="start" data-mode="missed" ${S.missed.length ? "" : "disabled"}>Retry</button></div></article>
+      <article class="tcard"><div class="tcard-head"><span class="tnum">Read</span></div><h3>Study notes</h3>
+        <p class="meta">Speed limits, distances, signs, GDL rules, points, and DWI penalties in one place.</p>
+        <div class="tcard-foot"><span class="best">8 sections</span><button class="btn ghost sm" data-act="notes">Open notes</button></div></article>
+    </div>`;
+
+  h += `<div class="section-head"><h2>Score tracker</h2><span class="aside">You are ready when every test shows 14 or 15.</span></div>`;
+  if (!S.history.length) {
+    h += `<p class="empty">Each finished test adds a row here with your score and the topics to review.</p>`;
+  } else {
+    h += `<div class="scroll-x"><table class="tracker"><thead><tr><th>Date</th><th>Test</th><th>Score</th><th>Topics to review</th></tr></thead><tbody>`;
+    S.history.slice(0, 12).forEach(r => {
+      const pass = r.score >= Math.ceil(r.total * 0.8);
+      const tp = (r.topics || []).map(k => TOPICS[k]).filter(Boolean);
+      const tpText = tp.length ? tp.slice(0, 3).join(", ") + (tp.length > 3 ? `, +${tp.length - 3} more` : "") : "—";
+      h += `<tr><td class="when">${fmtDate(r.date)}</td><td>${shortLabel(r.mode)}</td><td class="score ${pass ? "good" : "bad"}">${r.score}/${r.total}</td><td>${tpText}</td></tr>`;
+    });
+    h += `</tbody></table></div>`;
+  }
+  h += `<div class="reset-row">${confirmReset
+    ? `<span>Erase all scores and missed questions on this device?</span><button class="btn ghost sm" data-act="reset-yes">Erase</button><button class="btn ghost sm" data-act="reset-no">Keep</button>`
+    : `<span>Progress is saved in this browser only.</span><button class="link" data-act="reset">Reset progress</button>`}</div>`;
+  $("v-home").innerHTML = h;
+}
+
+function start(mode) {
+  let ids, instant = true, shuffleOpts = false;
+  if (mode === "exam") { ids = shuffle(QUESTIONS.map(q => q.id)).slice(0, EXAM_SIZE); instant = false; shuffleOpts = true; }
+  else if (mode === "missed") { ids = shuffle(S.missed.filter(id => BY_ID[id])); shuffleOpts = true; }
+  else { const n = +mode.slice(1); ids = QUESTIONS.filter(q => q.t === n).map(q => q.id); }
+  if (!ids.length) return;
+  const order = shuffleOpts ? Object.fromEntries(ids.map(id => [id, optionOrder(BY_ID[id])])) : null;
+  carP = 0;
+  S.session = { mode, ids, ans: {}, idx: 0, instant, order, confirming: false };
+  save();
+  show("quiz");
+}
+
+function renderQuiz() {
+  const s = S.session;
+  if (!s) { show("home"); return; }
+  const n = s.ids.length, id = s.ids[s.idx], q = BY_ID[id], order = orderFor(s, id);
+  const chosen = s.ans[id], locked = s.instant && chosen !== undefined;
+  const answered = s.ids.filter(x => s.ans[x] !== undefined).length;
+  let h = `<div class="qbar">
+    <div class="qbar-top"><span class="mode">${modeLabel(s.mode)}</span><button class="link" data-act="exit">Save and exit</button></div>
+    <div class="qcount"><span>Question <b>${s.idx + 1}</b> of ${n}</span><span>${answered} answered</span></div>
+    ${road(answered / n, `role="progressbar" aria-valuemin="0" aria-valuemax="${n}" aria-valuenow="${answered}" aria-label="Questions answered"`)}
+  </div>
+  <article class="qcard">
+    <div class="qtopic">${TOPICS[q.k]}</div>
+    ${q.s ? `<div class="qsign">${signSVG(q.s)}</div>` : ""}
+    <h2 class="qtext">${q.q}</h2>
+    <div class="opts" role="group" aria-label="Answer choices">`;
+  order.forEach((oi, pos) => {
+    let cls = "opt", mark = "";
+    if (locked) {
+      if (oi === q.a) { cls += " is-right"; mark = `<span class="mark" aria-label="Correct answer">✓</span>`; }
+      else if (oi === chosen) { cls += " is-wrong"; mark = `<span class="mark" aria-label="Your answer">✕</span>`; }
+    } else if (oi === chosen) cls += " is-picked";
+    h += `<button class="${cls}" data-act="pick" data-i="${oi}" ${locked ? "disabled" : ""} aria-pressed="${oi === chosen}"><span class="letter">${L[pos]}</span><span class="otext">${q.o[oi]}</span>${mark}</button>`;
+  });
+  h += `</div>`;
+  if (locked) {
+    const right = chosen === q.a;
+    h += `<div class="feedback ${right ? "ok" : "no"}" id="feedback" role="status">
+      <p class="verdict"><span class="vicon" aria-hidden="true">${right ? "✓" : "✕"}</span>${right ? "Correct!" : `Not quite. The answer is ${L[order.indexOf(q.a)]}.`}</p>
+      <p>${q.w}</p>
+      <button class="link" data-act="notes" data-topic="${q.k}">Review ${TOPICS[q.k].toLowerCase()} in the study notes →</button></div>`;
+  }
+  h += `</article>`;
+
+  const last = s.idx === n - 1;
+  const fwd = last
+    ? `<button class="btn primary" data-act="finish" id="fwd">Finish ${s.mode === "exam" ? "exam" : "and see score"}</button>`
+    : `<button class="btn primary" data-act="next" id="fwd">${chosen !== undefined ? "Next →" : "Skip →"}</button>`;
+  h += `<div class="qnav"><button class="btn ghost" data-act="back" ${s.idx === 0 ? "disabled" : ""}>← Back</button>${fwd}</div>`;
+
+  if (s.confirming) {
+    const un = s.ids.map((x, i) => (s.ans[x] === undefined ? i : -1)).filter(i => i >= 0);
+    if (un.length) {
+      h += `<div class="confirm" id="confirm" role="alert"><p><b>${un.length} ${un.length === 1 ? "question has" : "questions have"} no answer.</b> Unanswered questions count as wrong.</p>
+        <div class="row"><button class="btn ghost sm" data-act="jump" data-idx="${un[0]}">Go to question ${un[0] + 1}</button><button class="btn primary sm" data-act="finish-now">Finish anyway</button></div></div>`;
+    }
+  }
+  if (!s.instant) {
+    h += `<div class="navgrid-wrap"><div class="row"><div class="legend"><span><i class="done"></i>Answered</span><span><i></i>Not yet</span></div>
+      <button class="btn ghost sm" data-act="finish">Finish exam</button></div><div class="navgrid">`;
+    s.ids.forEach((x, i) => {
+      h += `<button class="${s.ans[x] !== undefined ? "done" : ""} ${i === s.idx ? "here" : ""}" data-act="jump" data-idx="${i}" aria-label="Question ${i + 1}${s.ans[x] !== undefined ? ", answered" : ""}">${i + 1}</button>`;
+    });
+    h += `</div></div>`;
+  }
+  h += `<p class="kbd-hint">Keyboard: press A–D or 1–4 to answer, Enter for next, ← to go back.</p>`;
+  $("v-quiz").innerHTML = h;
+  driveCar($("v-quiz"), answered / n);
+}
+
+function pick(i) {
+  const s = S.session, id = s.ids[s.idx];
+  if (s.instant && s.ans[id] !== undefined) return;
+  s.ans[id] = i;
+  s.confirming = false;
+  save();
+  renderQuiz();
+  if (s.instant) {
+    const fb = $("feedback");
+    if (fb) {
+      const r = fb.getBoundingClientRect();
+      if (r.bottom > window.innerHeight) fb.scrollIntoView({ block: "nearest", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    }
+    $("fwd")?.focus({ preventScroll: true });
+  }
+}
+function go(idx) {
+  const s = S.session;
+  s.idx = Math.max(0, Math.min(s.ids.length - 1, idx));
+  s.confirming = false;
+  save();
+  renderQuiz();
+  window.scrollTo(0, 0);
+}
+function tryFinish() {
+  const s = S.session;
+  if (s.ids.some(x => s.ans[x] === undefined)) {
+    s.confirming = true;
+    renderQuiz();
+    $("confirm")?.scrollIntoView({ block: "center" });
+    return;
+  }
+  finish();
+}
+function finish() {
+  const s = S.session;
+  let score = 0;
+  const missedSet = new Set(S.missed), topics = [];
+  s.ids.forEach(id => {
+    if (s.ans[id] === BY_ID[id].a) { score++; missedSet.delete(id); }
+    else { missedSet.add(id); if (!topics.includes(BY_ID[id].k)) topics.push(BY_ID[id].k); }
+  });
+  S.missed = [...missedSet];
+  if (s.mode !== "missed") S.best[s.mode] = Math.max(S.best[s.mode] ?? 0, score);
+  S.history.unshift({ mode: s.mode, score, total: s.ids.length, date: Date.now(), topics });
+  S.history = S.history.slice(0, 40);
+  S.last = { mode: s.mode, ids: s.ids, ans: s.ans, order: s.order, score, total: s.ids.length };
+  S.session = null;
+  resultsFilter = score === s.ids.length ? "all" : "missed";
+  save();
+  show("results");
+}
+
+function verdict(r) {
+  const passMark = Math.ceil(r.total * 0.8);
+  if (r.mode === "exam") return r.score >= 40
+    ? { cls: "good", pill: "Pass", text: "That is a passing score on the real test." }
+    : { cls: "bad", pill: "Not a pass yet", text: `You need 40. Review the topics below and try again.` };
+  if (r.mode === "missed") {
+    const missed = r.total - r.score;
+    return { cls: r.score === r.total ? "good" : "warn", pill: `${r.score} cleared`, text: r.score === r.total ? "Every missed question is cleared." : `${missed} still on your retry list.` };
+  }
+  if (r.score >= 14) return { cls: "good", pill: "Ready", text: "14 or 15 means you know this test. Retake it in 2 days to make sure it sticks." };
+  if (r.score >= passMark) return { cls: "warn", pill: "Passing pace", text: "That is 80%, the real pass mark. Aim for 14 or 15 before test day." };
+  return { cls: "bad", pill: "Keep studying", text: `Aim for at least ${passMark} of ${r.total}. Read the topics below, then take it again.` };
+}
+
+function renderResults() {
+  const r = S.last;
+  if (!r) { show("home"); return; }
+  const v = verdict(r), pct = Math.round(r.score / r.total * 100);
+  const wrong = r.ids.filter(id => r.ans[id] !== BY_ID[id].a);
+  const counts = {};
+  wrong.forEach(id => { const k = BY_ID[id].k; counts[k] = (counts[k] || 0) + 1; });
+  const topicList = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  const passMark = Math.ceil(r.total * 0.8);
+
+  carP = 0;
+  let h = `<div class="rhead">
+    <p class="eyebrow">${modeLabel(r.mode)} · results</p>
+    <div class="rscore"><b>${r.score}</b><span class="of">/ ${r.total}</span><span class="pill ${v.cls}">${v.pill}</span></div>
+    <p class="rsub">${pct}% correct. ${v.text}</p>
+    <div class="bar">${road(r.score / r.total, `aria-hidden="true"`, `<div class="trail ${v.cls}"></div>`)}
+      <div class="tick"></div><div class="tick-label">${passMark} = 80% pass line</div></div>`;
+  if (topicList.length) {
+    h += `<p class="eyebrow" style="margin-bottom:10px">Topics to review</p><div class="chips">`;
+    topicList.forEach(([k, n]) => { h += `<button class="chip" data-act="notes" data-topic="${k}">${TOPICS[k]} <span class="n">${n}</span></button>`; });
+    h += `</div>`;
+  }
+  h += `<div class="ractions">
+    <button class="btn primary" data-act="start" data-mode="${r.mode === "missed" ? (S.missed.length ? "missed" : "exam") : r.mode}">${r.mode === "exam" || (r.mode === "missed" && !S.missed.length) ? "New mock exam" : r.mode === "missed" ? "Retry missed again" : "Retake this test"}</button>
+    <button class="btn ghost" data-act="home">All tests</button></div></div>`;
+
+  h += `<div class="section-head"><h2>Answer review</h2>
+    <div class="seg" role="group" aria-label="Which questions to show">
+      <button data-act="filter" data-f="missed" aria-pressed="${resultsFilter === "missed"}">Missed (${wrong.length})</button>
+      <button data-act="filter" data-f="all" aria-pressed="${resultsFilter === "all"}">All (${r.total})</button></div></div>`;
+  const list = r.ids.map((id, i) => [id, i]).filter(([id]) => resultsFilter === "all" || r.ans[id] !== BY_ID[id].a);
+  if (!list.length) h += `<p class="empty">No missed questions. Nice work.</p>`;
+  else {
+    h += `<ol class="rlist">`;
+    list.forEach(([id, i]) => {
+      const q = BY_ID[id], order = orderFor(r, id), c = r.ans[id], ok = c === q.a;
+      h += `<li class="ritem"><div class="rnum">${i + 1}</div><div class="rbody">
+        <p class="rq">${q.q}</p>
+        <p class="rline ${ok ? "good" : "bad"}"><span class="mark">${ok ? "✓" : "✕"}</span><span>Your answer: ${c === undefined ? "<i>no answer</i>" : `${L[order.indexOf(c)]}. ${q.o[c]}`}</span></p>
+        ${ok ? "" : `<p class="rline good"><span class="mark">✓</span><span>Correct: ${L[order.indexOf(q.a)]}. ${q.o[q.a]}</span></p>`}
+        <p class="rwhy">${q.w}</p>
+        <button class="link" data-act="notes" data-topic="${q.k}">${TOPICS[q.k]} →</button></div></li>`;
+    });
+    h += `</ol>`;
+  }
+  $("v-results").innerHTML = h;
+  driveCar($("v-results"), r.score / r.total);
+}
+
+function openNotes(topic) {
+  if (view !== "notes") notesFrom = view;
+  $("notes-back").textContent = notesFrom === "quiz" ? "← Back to question" : notesFrom === "results" ? "← Back to results" : "← Back";
+  show("notes", { keepScroll: !!topic });
+  if (topic) {
+    const el = $("n-" + topic);
+    if (el) {
+      el.scrollIntoView({ block: "start" });
+      el.classList.add("flash");
+      setTimeout(() => el.classList.remove("flash"), 1600);
+    }
+  } else window.scrollTo(0, 0);
+}
+
+// ---------------- events ----------------
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-act]");
+  if (!b || b.disabled) return;
+  const act = b.dataset.act;
+  if (act === "jumpnote") { e.preventDefault(); $(b.dataset.target)?.scrollIntoView({ block: "start" }); return; }
+  if (act === "home") { confirmReset = false; show("home"); }
+  else if (act === "start") start(b.dataset.mode);
+  else if (act === "resume") { carP = 0; show("quiz"); }
+  else if (act === "discard") { S.session = null; save(); renderHome(); }
+  else if (act === "exit") show("home");
+  else if (act === "pick") pick(+b.dataset.i);
+  else if (act === "next") go(S.session.idx + 1);
+  else if (act === "back") go(S.session.idx - 1);
+  else if (act === "jump") go(+b.dataset.idx);
+  else if (act === "finish") tryFinish();
+  else if (act === "finish-now") finish();
+  else if (act === "filter") { resultsFilter = b.dataset.f; renderResults(); }
+  else if (act === "notes") openNotes(b.dataset.topic);
+  else if (act === "notes-back") show(notesFrom === "quiz" && S.session ? "quiz" : notesFrom === "results" && S.last ? "results" : "home");
+  else if (act === "reset") { confirmReset = true; renderHome(); }
+  else if (act === "reset-no") { confirmReset = false; renderHome(); }
+  else if (act === "reset-yes") { S = fresh(); confirmReset = false; save(); renderHome(); }
+});
+
+document.addEventListener("keydown", e => {
+  if (view !== "quiz" || !S.session || e.metaKey || e.ctrlKey || e.altKey) return;
+  const s = S.session, k = e.key.toLowerCase();
+  const map = { "1": 0, "2": 1, "3": 2, "4": 3, a: 0, b: 1, c: 2, d: 3 };
+  if (k in map) {
+    const oi = orderFor(s, s.ids[s.idx])[map[k]];
+    if (oi !== undefined) { e.preventDefault(); pick(oi); }
+  } else if (k === "enter" || k === "arrowright") {
+    if (k === "enter" && document.activeElement?.tagName === "BUTTON") return;
+    e.preventDefault();
+    if (s.idx === s.ids.length - 1) tryFinish(); else go(s.idx + 1);
+  } else if (k === "arrowleft" && s.idx > 0) { e.preventDefault(); go(s.idx - 1); }
+});
+
+// ---------------- boot ----------------
+document.querySelectorAll(".shape[data-sign]").forEach(td => { td.innerHTML = signSVG(td.dataset.sign); });
+window.claude?.hot?.snapshot?.(() => ({ S, view }));
+function boot(data) {
+  if (data && data.S) S = Object.assign(fresh(), data.S);
+  if (location.hash === "#notes") openNotes();
+  else show(data && data.view === "quiz" && S.session ? "quiz" : data && data.view === "results" && S.last ? "results" : "home");
+}
+window.claude?.hot?.ready ? window.claude.hot.ready(boot) : boot(window.claude?.hot?.data ?? {});
+</script>
+</body>
+</html>
